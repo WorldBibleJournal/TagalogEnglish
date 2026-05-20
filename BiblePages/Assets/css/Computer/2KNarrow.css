@@ -10,6 +10,90 @@ html {
 
 
 
+
+
+@media (max-width: 1000px) {
+
+
+  #indeximage4k, #indeximage1080, .verticalimageindex, #image1080,
+  #image4k,
+  #himageHoriz,
+  #indeximage4k2,
+  #image4k2,
+  #himageHoriz2, #verticalimageindex {
+  display: none;
+    float: left;
+    visibility: hidden;
+  }
+
+  
+  #indeximage10802,
+  #image10802, #himageHoriz, #horizontalimageindex {
+    display: block;
+    float: none;
+    visibility:visible;
+  }
+}
+
+
+
+@media (max-width: 900px) {
+  .horizontalimageindex {
+    display: block;
+  }
+
+  #indeximage4k,
+  #image4k,
+  #indeximage1080,
+  #image1080,
+  #indeximage4k2,
+  #image4k2,
+  #indeximage10802,
+  #image10802 {
+    display: none;
+  }
+}
+
+@media (min-width: 400px) {
+  .horizontalimageindex {
+    display: none;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.horizontalimageindex {
+  height: auto;
+  margin: 0 auto;
+  width: 70%;
+}
+
+@media (min-width: 1001px) and (max-width: 2560px) {
+
+
+
+  #image4k,
+  #himageHoriz,
+  #indeximage4k2,
+  #image4k2,
+  #himageHoriz2 {
+  display: block;
+    float: left;
+    visibility: visible;
+  }
+    #indeximage1080,   #indeximage4k,
+  #image1080,
+  #indeximage10802,
+  #image10802 {
+    display: none;
+    float: none;
+    visibility:hidden;
+  }
+
+}
+
+
+
 #searchere {
   width: 100%;
   height: auto;
@@ -85,7 +169,7 @@ html {
 
 
 .clink {
-  font-size: 1em;
+  font-size: 1.5em;
   width: 35px;
   /* Fixed width so all boxes are equal */
   height: 30px;
@@ -108,8 +192,8 @@ a.clink:visited {
   display: inline-flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   font-weight: bold;
 }
 
@@ -159,9 +243,11 @@ a.clink:visited {
 }
 
 .horizontalimageindex {
-  width: 90%;
-  height: auto;
-  margin: 20px;
+  
+
+          width: 70%;
+        height: auto;
+        margin: 0 auto;
 }
 
 .horizontalbiggerimageindex {
@@ -223,7 +309,7 @@ a.clink:visited {
   display: flex;
 }
 
-#image1080,
+
 #image4k {
   float: left;
   max-width: 220px;

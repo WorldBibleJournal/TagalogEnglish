@@ -3,12 +3,126 @@ body {
 }
 
 .clink {
-  font-size: 1em;
-  width: 35px;
+  font-size: 1.5em;
+  width: 50px;
   /* Fixed width so all boxes are equal */
-  height: 30px;
+  height: 40px;
   /* Fixed height */
 }
+
+
+
+@media (max-width: 1299px) {
+  .horizontalimageindex {
+    display: block;
+  }
+
+  #indeximage4k,
+  #image4k,
+  #indeximage1080,
+  #image1080,
+  #indeximage4k2,
+  #image4k2,
+  #indeximage10802,
+  #image10802 {
+    display: none;
+  }
+}
+
+@media (min-width: 400px) {
+  .horizontalimageindex {
+    display: none;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.horizontalimageindex {
+  height: auto;
+  margin: 0 auto;
+  width: 70%;
+}
+
+
+
+
+
+
+
+
+
+#bigthreeIndexFlexHolder {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexIndexStart {
+  order: 2;
+}
+
+.flexIndexChapterNumber {
+  order: 1;
+}
+
+.flexIndexEnd {
+  order: 3;
+}
+
+
+
+
+@media (min-width: 800px) and (max-width: 1299px) {
+
+
+  #indeximage4k, #indeximage1080, .verticalimageindex, #image1080,
+  #image4k,
+  #himageHoriz,
+  #indeximage4k2,
+  #image4k2,
+  #himageHoriz2, #verticalimageindex {
+  display: none;
+    float: left;
+    visibility: hidden;
+  }
+
+  
+  #indeximage10802,
+  #image10802, #himageHoriz, #horizontalimageindex {
+    display: block;
+    float: left;
+    visibility:visible;
+  }
+}
+
+
+@media (min-width: 1300px) and (max-width: 2560px) {
+
+
+  #indeximage4k,
+  #image4k,
+  #himageHoriz,
+  #indeximage4k2,
+  #image4k2,
+  #himageHoriz2, #verticalimageindex {
+  display: block;
+    float: left;
+    visibility: visible;
+  }
+
+    #indeximage1080,
+  #image1080,
+  #indeximage10802,
+  #image10802, #himageHoriz {
+    display: none;
+    float: left;
+    visibility:hidden;
+  }
+
+
+}
+
+
+
 
 .IndexChapterParent,
 .IndexChapterParent,
@@ -26,8 +140,8 @@ a.clink:visited {
   display: inline-flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   font-weight: bold;
 }
 
@@ -47,7 +161,13 @@ a.clink:visited {
 
 /*spacerawayfrommenubarito*/
 .bible-container {
-  margin-bottom: auto;
+        position: absolute;
+        width: 72%;
+        height: auto;
+        margin-bottom: 200px;
+        margin-left: 27%;
+        margin-right: 1%;
+        left: 0px;
 
 }
 
@@ -77,9 +197,15 @@ a.clink:visited {
 }
 
 .horizontalimageindex {
-  width: 40%;
-  height: auto;
-  margin: 20px;
+
+
+
+          width: 70%;
+        height: auto;
+        margin: 0 auto;
+        float: none !important;
+
+
 }
 
 .horizontalbiggerimageindex {
@@ -144,7 +270,7 @@ a.clink:visited {
 #image1080,
 #image4k {
   float: left;
-  max-width: 220px;
+  max-width: 300px;
   min-width: 50px;
   width: 100%;
   height: auto;
@@ -177,10 +303,14 @@ a.clink:visited {
 #DisplayFlexBigThree {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 4%;
 }
 
-
+    .footerholder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 
 .OtherMenu {
   height: 100%;
@@ -271,12 +401,15 @@ a.clink:visited {
 
 .LCOldTestament,
 .LCNewTestament {
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
 
 #bgUpload {
   font-size: 1.2em;
 }
+
+
+
 
 .BMONTgenesis,
 .BMONTexodus,
@@ -522,9 +655,16 @@ a.clink:visited {
 
 }
 
+        #verseInput, form#searchPassage>input#qry {
+            font-size: 1em;
+            height: 40px;
+            width: 100%;
+            margin-bottom: 4%;
+        }
+
 
 .smallfont {
-  font-size: .9em;
+  font-size: .8em;
 }
 
 /* DIGLOT POST BUTTON */
@@ -687,7 +827,7 @@ a.clink:visited {
   background-color: #0f0f46;
   color: white;
   padding: 1% 6%;
-  height: 20px;
+  height: 40px;
 }
 
 #holderdiglottext {
@@ -771,7 +911,7 @@ a.clink:visited {
   color: white;
   padding: 2% 5%;
   width: 15%;
-  height: 30px;
+  height: 45px;
 }
 
 
@@ -973,7 +1113,7 @@ a.clink:visited {
   color: white;
   padding: 1% 1%;
   width: 150px;
-  height: 40px;
+  height: 60px;
   align-content: center;
   justify-items: center;
   gap: 5%;
@@ -1412,14 +1552,16 @@ a.clink:visited {
 /*spacerawayfrommenubarito*/
 
 .bible-container {
-  position: absolute;
-  width: 70%;
-  height: auto;
-  margin-bottom: 200px;
-  margin-left: 27.5%;
-  margin-right: 2.5%;
-  left: 0;
+        position: absolute;
+        width: 72%;
+        height: auto;
+        margin-bottom: 200px;
+        margin-left: 27%;
+        margin-right: 1%;
+        left: 0px;
 }
+
+
 
 
 #MenuContainerMirrored {
@@ -1659,4 +1801,22 @@ a.clink:visited {
 }
 
 
+.dualespecial {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  gap: 2%;
+}
 
+.smallfont {
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
+  background-color: #0f0f46;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+.smallfont:last-child:nth-child(2n - 1) {
+  grid-column-end: 5;
+}

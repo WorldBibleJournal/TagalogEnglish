@@ -594,6 +594,86 @@ a.clink:visited {
 }
 
 
+
+@media (max-width: 800px) {
+  .horizontalimageindex {
+    display: block;
+  }
+
+  #indeximage4k,
+  #image4k,
+  #indeximage1080,
+  #image1080,
+  #indeximage4k2,
+  #image4k2,
+  #indeximage10802,
+  #image10802 {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .horizontalimageindex {
+    display: none;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.horizontalimageindex {
+  height: auto;
+  margin: 0 auto;
+  width: 70%;
+}
+
+@media (min-width: 701px) and (max-width: 1920px) {
+
+  #indeximage1080,
+  #image1080,
+  #indeximage10802,
+  #image10802 {
+    display: block;
+    float: left;
+    visibility: visible;
+  }
+
+  #indeximage4k,
+  #image4k,
+  #himageHoriz,
+  #indeximage4k2,
+  #image4k2,
+  #himageHoriz2 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 1921px) {
+
+  #indeximage1080,
+  #image1080,
+  #indeximage10802,
+  #image10802 {
+    display: none;
+    visibility: hidden;
+  }
+
+  #indeximage4k,
+  #image4k,
+  #indeximage4k2,
+  #image4k2 {
+    display: block;
+    float: left;
+    visibility: visible;
+  }
+}
+
+    .footerholder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
 #calltoactionhanging,
 #calltoactionhanging2 {
   position: relative;
