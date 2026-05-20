@@ -412,6 +412,67 @@ class DiglotThumbMenu extends HTMLElement {
                                   <div id="bkerevelationchaptersResult" class="chapterResult"></div>
                                   <div id="bkerevelationverseResult" class="verseResult"></div>
 
+
+
+           <a href="BiblePages/BibleJournal/binder.html">                       
+  <div class="thumbindex">
+                <hr />
+                                         <span class="diglotnav">
+        BIBLE JOURNALS
+      </span>
+      <br />
+      <span class="bibleduo">
+        Bible and Life Lessons
+      </span>
+      <hr />
+  </div>
+  </a>
+
+
+    <div class="books thumbindex" id="journalholder1">
+    </div>
+ <div class="books thumbindex" id="journalholder">
+    </div>
+
+    
+  <div class="thumbindex">
+
+    <a href="../BridgePassages/bible-passages.html">
+      <div class="OtherLinks">
+        Popular Passages
+      </div>
+    </a>
+  </div>  <div class="thumbindex">
+    <a href="../DailyDevotion/index.html">
+      <div class="OtherLinks tr2">
+        <span class="tr2">Daily Devotion</span>
+      </div>
+    </a>
+  </div>  <div class="thumbindex">
+    <a href="../BridgePassages/bridge-to-life.html">
+      <div class="OtherLinks">
+        <span class="tr3"></span>
+        The Bridge to Life
+      </div>
+    </a>
+  </div>  <div class="thumbindex">
+    <a href="http://facebook.com/authorizedbible">
+      <div class="OtherLinks">
+        <span class="tr5">
+          Facebook Page of<br />
+          EnglishTagalogBible.Com</span>
+      </div>
+    </a>
+  </div>  <div class="thumbindex">
+    <a href="http://philnavs.org">
+      <div class="OtherLinks philnavsflex">
+        <span class="tr5 philsflex" style="display:inline;">The Free Bible Online is </span><span class="tr5 philsflex" style="display:inLine;">a ministry of the </span><span style="display:inLine;" class="navigatorslink philsflex">NAVIGATORS</span>
+        <span class="tr8 philsflex" style="color:maroon; text-adivgn:center !important;">PhilNavs.Org</span>
+      </div>
+    </a>
+  </div>  
+
+                       
                                                                   <div id="GodYouReign" class="NewTestamentbke"><br/>
                                 GOD YOU REIGN FOREVER MORE! <br/>ADONAI REIGN! YESHUA REIGN!<br/>
                                 <img alt="Book Image" class="horizontalimageindexNOTE nothinglasts" id="himageHoriz" src="../Assets/images/PersonalBlog/800/LoveOfGod200.webp" /><br/><br/><br/><br/>JESUS, SAVE ALL OF US.
@@ -427,9 +488,7 @@ class DiglotThumbMenu extends HTMLElement {
                       <div class="menuheader">
                           CONTROL PANEL
                       </div>
-                      <div class="versehighlight">
-                          Choose Verse To Highlight
-                      </div>
+   
                       <div class="controlheader marginhere">TEXT SIZE</div>
                       <div class="copybuttons marginhere">
                           <div class="dualplacement">
@@ -566,6 +625,28 @@ class DiglotThumbMenu extends HTMLElement {
                       <div class="soloplacement">
                           <div class="bcbgreset colorpage" style="border:2px solid black;"  onclick="bcbgresetB()">Default</div>
                       </div>
+
+
+
+   <a href="../BibleJournal/binder.html">                       
+  <div class="thumbindex">
+                <hr />
+                                         <span class="diglotnav">
+        BIBLE JOURNALS
+      </span>
+      <br />
+      <span class="bibleduo">
+        Bible and Life Lessons
+      </span>
+      <hr />
+  </div>
+  </a>
+
+
+
+
+                          
+
                       <div class="controlheader marginhere"> </div>
                       <div id="GodYouReign" class="NewTestamentbke"><br/>
                           GOD YOU REIGN FOREVER MORE! <br/>ADONAI REIGN! YESHUA REIGN!<br/>

@@ -102,8 +102,8 @@ a.clink:visited {
   display: inline-flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 35px;
-  height: 35px;
+        width: 32px;
+        height: 32px;
   font-weight: bold;
 }
 
@@ -438,6 +438,7 @@ a.clink:visited {
 #labelTitle {
   font-weight: bold;
   font-size: 1.2em;
+
 }
 
 #bgUpload {
@@ -1280,7 +1281,7 @@ a.clink:visited {
 .CustomizerFlex {
   display: flex;
   justify-items: center;
-  flex-direction: row;
+  flex-direction: column;
   gap: 5%;
 }
 
@@ -1302,7 +1303,7 @@ a.clink:visited {
   gap: 5%;
   flex: 1 0 10%;
   border: 2px solid rgb(10, 10, 14);
-  width: 45%;
+  width: 100%;
   height: 250px;
 }
 
@@ -1327,12 +1328,17 @@ a.clink:visited {
 
 .uploadholder {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   justify-content: center;
   margin-left: 0;
   align-items: center;
+
+      
+        margin-bottom: 5%;
 }
+
+#clinkColumn {width:100%;}
 
 #labelTitleFlex {
   display: flex;
@@ -1344,8 +1350,15 @@ a.clink:visited {
 #bgUploadFlex {
   width: 100%;
   height: auto;
-  margin-left: 25%;
+  margin-left: 0px;
 }
+
+    #bgUpload
+
+ {
+        font-size: 1em;
+        width: 100%;
+    }
 
 
 #applyImageThemeFlex {
@@ -1410,7 +1423,7 @@ a.clink:visited {
   gap: 5%;
   flex: 1 0 10%;
   border: 2px solid rgb(10, 10, 14);
-  width: 40%;
+  width: 100%;
   height: 250px;
 }
 

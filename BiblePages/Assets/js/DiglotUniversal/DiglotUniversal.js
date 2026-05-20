@@ -445,7 +445,7 @@ class JoinerDiglotPostA extends HTMLElement {
 <div id="MenuContainerMirrored">
 
   <div id="biblejournalpostsholder">
-
+     <a href="../BibleJournal/binder.html">    
     <div class="remainhere">
       <hr class="lefthrliner" />
       <span class="diglotnav">
@@ -457,7 +457,7 @@ class JoinerDiglotPostA extends HTMLElement {
       </span>
       <hr />
     </div>
-
+   </a>
 
 
     <div class="books hoderup" id="journalholderstatic">
@@ -561,7 +561,7 @@ class JoinerDiglotPostB extends HTMLElement {
 <div id="MenuContainerMirrored">
 
   <div id="biblejournalpostsholder">
-
+     <a href="../BibleJournal/binder.html">    
     <div class="remainhere">
       <hr class="lefthrliner" />
       <span class="diglotnav">
@@ -573,7 +573,7 @@ class JoinerDiglotPostB extends HTMLElement {
       </span>
       <hr />
     </div>
-
+   </a>
 
         <div class="books hoderup" id="journalholderstatic">
       <a href="../BibleJournal/0001.html">
@@ -1150,7 +1150,7 @@ class JoinerDiglotPostBIndex extends HTMLElement {
 <div id="MenuContainerMirrored">
 
   <div id="biblejournalpostsholder">
-
+     <a href="BiblePages/BibleJournal/binder.html">    
     <div class="remainhere">
       <hr class="lefthrliner" />
       <span class="diglotnav">
@@ -1162,6 +1162,7 @@ class JoinerDiglotPostBIndex extends HTMLElement {
       </span>
       <hr />
     </div>
+   </a>
 
     <div class="books hoderup" id="journalholderstatic">
       <a href="BiblePages/BibleJournal/0001.html">

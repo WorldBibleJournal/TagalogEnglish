@@ -693,6 +693,9 @@ html {
   font-size: 1em;
   direction: ltr;
   text-align: center;
+  display: flex;
+        flex-direction: column;
+        padding: 2%;
 }
 
 .journalnumber {
@@ -1444,7 +1447,8 @@ html {
 
 #MenuContainer,
 .OtherLinks {
-  max-width: 250px;
+        width: 100%;
+        padding: 5% 0px;
 }
 
 #MenuContainer {
@@ -1585,8 +1589,8 @@ html {
 
 
 
-#biblemenuanimation{background: #c4eeff !important;
-background: linear-gradient(174deg, rgba(196, 238, 255, 1) 0%, rgba(140, 210, 245, 1) 51%, rgba(89, 177, 207, 1) 100%) !important;}
+#biblemenuanimation{        background: #c4eeff !important;
+        background: linear-gradient(174deg, rgb(221 244 253) 0%, rgb(205 230 243) 51%, rgb(245 245 245) 100%) !important;}
 
 #biblemenuanimationright,
 #biblemenuanimation {
@@ -1639,9 +1643,10 @@ border-left: 2px solid #3c5984;
 
 }
 
+.thumbindex {font-size: 1.4em; width:100%; height:auto; text-align: center;}
 .topspacer {
   display: flex;
-  margin-top: 15%;
+  margin-top: 22%;
 
 }
 
