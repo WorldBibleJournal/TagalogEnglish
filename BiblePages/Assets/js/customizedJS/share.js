@@ -21,7 +21,6 @@ function getBookChapterFromTitle() {
     chapterLink: `${engBook.replace(/\s+/g, '')}${chapter}` // "Mark1"
   };
 }
-
 function buildShareItem() {
   const input = document.getElementById('verseInput');
   if (!input) return null;
@@ -48,6 +47,15 @@ function buildShareItem() {
     link: shareLink,
     text: `Read ${bookData.engBook} ${bookData.chapter} : ${verses} — ${shareLink}`
   };
+}
+
+
+
+function normalizeVerses(rawInput) {
+  // Trim and split by spaces
+  const parts = rawInput.trim().split(/\s+/);
+  // Join back with spaces so the hash looks like "1 3 5-7 10"
+  return parts.join('%20');
 }
 
 
@@ -127,6 +135,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener('hashchange', renderShareButtons);
 });
+
+
+
 
 
 
