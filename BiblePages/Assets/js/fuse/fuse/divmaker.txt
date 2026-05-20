@@ -254,7 +254,7 @@
 <div id="bkeMicahchaptersResult" class="chapterResult"></div>
 <div id="bkeMicahverseResult" class="verseResult"></div>
 
-<div id="bkeNahum" class="OldTestamentbke"><span class="oldlanguage">Nahum</span><span class="oldsublanguage">(Naum)</span> </div>
+<div id="bkeNahum" class="OldTestamentbke"><span class="oldlanguage">Nahum</span><span class="oldsublanguage">(Nahum)</span> </div>
 <div id="bkeNahumchaptersResult" class="chapterResult"></div>
 <div id="bkeNahumverseResult" class="verseResult"></div>
 
@@ -266,7 +266,7 @@
 <div id="bkeZephaniahchaptersResult" class="chapterResult"></div>
 <div id="bkeZephaniahverseResult" class="verseResult"></div>
 
-<div id="bkeHaggai" class="OldTestamentbke"><span class="oldlanguage">Haggai</span><span class="oldsublanguage">(Ageo)</span> </div>
+<div id="bkeHaggai" class="OldTestamentbke"><span class="oldlanguage">Haggai</span><span class="oldsublanguage">(Hagai)</span> </div>
 <div id="bkeHaggaichaptersResult" class="chapterResult"></div>
 <div id="bkeHaggaiverseResult" class="verseResult"></div>
 

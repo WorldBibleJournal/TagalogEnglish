@@ -127,7 +127,7 @@ this.innerHTML = `<div id="MenuContainer">  <div class="BibleChaptersMenu" id="b
         <div class="BMONTmicah divmicah"><span class="english englishLabel">Micah</span><br /><span class="tagalogleft tagalogLabel">Mikas</span></div>
       </a>
       <a href="../OldTestament/34-nahum.html">
-        <div class="BMONTnahum divnahum"><span class="english englishLabel">Nahum</span><br /><span class="tagalogleft tagalogLabel">Naum</span></div>
+        <div class="BMONTnahum divnahum"><span class="english englishLabel">Nahum</span><br /><span class="tagalogleft tagalogLabel">Nahum</span></div>
       </a>
       <a href="../OldTestament/35-habakkuk.html">
         <div class="BMONThabakkuk divhabakkuk"><span class="english englishLabel">Habakkuk</span><br /><span class="tagalogleft tagalogLabel">Habacuc</span></div>
@@ -136,7 +136,7 @@ this.innerHTML = `<div id="MenuContainer">  <div class="BibleChaptersMenu" id="b
         <div class="BMONTzephaniah divzephaniah"><span class="english englishLabel">Zephaniah</span><br /><span class="tagalogleft tagalogLabel">Sofonias</span></div>
       </a>
       <a href="../OldTestament/37-haggai.html">
-        <div class="BMONThaggai divhaggai"><span class="english englishLabel">Haggai</span><br /><span class="tagalogleft tagalogLabel">Ageo</span></div>
+        <div class="BMONThaggai divhaggai"><span class="english englishLabel">Haggai</span><br /><span class="tagalogleft tagalogLabel">Hagai</span></div>
       </a>
       <a href="../OldTestament/38-zechariah.html">
         <div class="BMONTzechariah divzechariah"><span class="english englishLabel">Zechariah</span><br /><span class="tagalogleft tagalogLabel">Zacarias</span></div>

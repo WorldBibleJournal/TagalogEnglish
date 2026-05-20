@@ -747,10 +747,10 @@ class DiglotMenu extends HTMLElement {
             <a href="../OldTestament/31-obadiah.html"><div class="BMONTobadiah divobadiah"><span class="english englishLabel">Obadiah</span><br/><span class="tagalogleft tagalogLabel">Obadias</span></div></a>
             <a href="../OldTestament/32-jonah.html"><div class="BMONTjonah divjonah"><span class="english englishLabel">Jonah</span><br/><span class="tagalogleft tagalogLabel">Jonas</span></div></a>
             <a href="../OldTestament/33-micah.html"><div class="BMONTmicah divmicah"><span class="english englishLabel">Micah</span><br/><span class="tagalogleft tagalogLabel">Mikas</span></div></a>
-            <a href="../OldTestament/34-nahum.html"><div class="BMONTnahum divnahum"><span class="english englishLabel">Nahum</span><br/><span class="tagalogleft tagalogLabel">Naum</span></div></a>
+            <a href="../OldTestament/34-nahum.html"><div class="BMONTnahum divnahum"><span class="english englishLabel">Nahum</span><br/><span class="tagalogleft tagalogLabel">Nahum</span></div></a>
             <a href="../OldTestament/35-habakkuk.html"><div class="BMONThabakkuk divhabakkuk"><span class="english englishLabel">Habakkuk</span><br/><span class="tagalogleft tagalogLabel">Habacuc</span></div></a>
             <a href="../OldTestament/36-zephaniah.html"><div class="BMONTzephaniah divzephaniah"><span class="english englishLabel">Zephaniah</span><br/><span class="tagalogleft tagalogLabel">Sofonias</span></div></a>
-            <a href="../OldTestament/37-haggai.html"><div class="BMONThaggai divhaggai"><span class="english englishLabel">Haggai</span><br/><span class="tagalogleft tagalogLabel">Ageo</span></div></a>
+            <a href="../OldTestament/37-haggai.html"><div class="BMONThaggai divhaggai"><span class="english englishLabel">Haggai</span><br/><span class="tagalogleft tagalogLabel">Hagai</span></div></a>
             <a href="../OldTestament/38-zechariah.html"><div class="BMONTzechariah divzechariah"><span class="english englishLabel">Zechariah</span><br/><span class="tagalogleft tagalogLabel">Zacarias</span></div></a>
             <a href="../OldTestament/39-malachi.html"><div class="BMONTmalachi divmalachi"><span class="english englishLabel">Malachi</span><br/><span class="tagalogleft tagalogLabel">Malakias</span></div></a>
       
@@ -910,10 +910,10 @@ class DiglotMenuIndex extends HTMLElement {
             <a href="BiblePages/OldTestament/31-obadiah.html"><div class="BMONTobadiah divobadiah"><span class="english englishLabel">Obadiah</span><br/><span class="tagalogleft tagalogLabel">Obadias</span></div></a>
             <a href="BiblePages/OldTestament/32-jonah.html"><div class="BMONTjonah divjonah"><span class="english englishLabel">Jonah</span><br/><span class="tagalogleft tagalogLabel">Jonas</span></div></a>
             <a href="BiblePages/OldTestament/33-micah.html"><div class="BMONTmicah divmicah"><span class="english englishLabel">Micah</span><br/><span class="tagalogleft tagalogLabel">Mikas</span></div></a>
-            <a href="BiblePages/OldTestament/34-nahum.html"><div class="BMONTnahum divnahum"><span class="english englishLabel">Nahum</span><br/><span class="tagalogleft tagalogLabel">Naum</span></div></a>
+            <a href="BiblePages/OldTestament/34-nahum.html"><div class="BMONTnahum divnahum"><span class="english englishLabel">Nahum</span><br/><span class="tagalogleft tagalogLabel">Nahum</span></div></a>
             <a href="BiblePages/OldTestament/35-habakkuk.html"><div class="BMONThabakkuk divhabakkuk"><span class="english englishLabel">Habakkuk</span><br/><span class="tagalogleft tagalogLabel">Habacuc</span></div></a>
             <a href="BiblePages/OldTestament/36-zephaniah.html"><div class="BMONTzephaniah divzephaniah"><span class="english englishLabel">Zephaniah</span><br/><span class="tagalogleft tagalogLabel">Sofonias</span></div></a>
-            <a href="BiblePages/OldTestament/37-haggai.html"><div class="BMONThaggai divhaggai"><span class="english englishLabel">Haggai</span><br/><span class="tagalogleft tagalogLabel">Ageo</span></div></a>
+            <a href="BiblePages/OldTestament/37-haggai.html"><div class="BMONThaggai divhaggai"><span class="english englishLabel">Haggai</span><br/><span class="tagalogleft tagalogLabel">Hagai</span></div></a>
             <a href="BiblePages/OldTestament/38-zechariah.html"><div class="BMONTzechariah divzechariah"><span class="english englishLabel">Zechariah</span><br/><span class="tagalogleft tagalogLabel">Zacarias</span></div></a>
             <a href="BiblePages/OldTestament/39-malachi.html"><div class="BMONTmalachi divmalachi"><span class="english englishLabel">Malachi</span><br/><span class="tagalogleft tagalogLabel">Malakias</span></div></a>
       

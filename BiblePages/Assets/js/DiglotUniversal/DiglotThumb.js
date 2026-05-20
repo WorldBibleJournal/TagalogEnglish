@@ -215,7 +215,7 @@ class DiglotThumbMenu extends HTMLElement {
                                   <div id="bkemicahverseResult" class="verseResult"></div>
                                   <div id="bkenahum" class="NewTestamentbke">
                                     <span class="newlanguage">Nahum</span>
-                                    <span class="newsublanguage">(Naum)</span>
+                                    <span class="newsublanguage">(Nahum)</span>
                                   </div>
                                   <div id="bkenahumchaptersResult" class="chapterResult"></div>
                                   <div id="bkenahumverseResult" class="verseResult"></div>
@@ -233,7 +233,7 @@ class DiglotThumbMenu extends HTMLElement {
                                   <div id="bkezephaniahverseResult" class="verseResult"></div>
                                   <div id="bkeHaggai" class="NewTestamentbke">
                                     <span class="newlanguage">Haggai</span>
-                                    <span class="newsublanguage">(Ageo)</span>
+                                    <span class="newsublanguage">(Hagai)</span>
                                   </div>
                                   <div id="bkeHaggaichaptersResult" class="chapterResult"></div>
                                   <div id="bkeHaggaiverseResult" class="verseResult"></div>
