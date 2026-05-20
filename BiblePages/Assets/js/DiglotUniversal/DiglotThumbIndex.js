@@ -429,27 +429,27 @@ class DiglotThumbMenu extends HTMLElement {
   </a>
 
 
-    <div class="books thumbindex" id="journalholder1">
+    <div class="books thumbindex" id="journalholder1Desktop">
     </div>
- <div class="books thumbindex" id="journalholder">
+ <div class="books thumbindex" id="journalholderDesktop">
     </div>
 
         
   <div class="thumbindex">
 
-    <a href="../BridgePassages/bible-passages.html">
+    <a href="BiblePages/BridgePassages/bible-passages.html">
       <div class="OtherLinks">
         Popular Passages
       </div>
     </a>
   </div>  <div class="thumbindex">
-    <a href="../DailyDevotion/index.html">
+    <a href="BiblePages/DailyDevotion/index.html">
       <div class="OtherLinks tr2">
         <span class="tr2">Daily Devotion</span>
       </div>
     </a>
   </div>  <div class="thumbindex">
-    <a href="../BridgePassages/bridge-to-life.html">
+    <a href="BiblePages/BridgePassages/bridge-to-life.html">
       <div class="OtherLinks">
         <span class="tr3"></span>
         The Bridge to Life
@@ -642,19 +642,19 @@ class DiglotThumbMenu extends HTMLElement {
                            
   <div class="thumbindex">
 
-    <a href="../BridgePassages/bible-passages.html">
+    <a href="BiblePages/BridgePassages/bible-passages.html">
       <div class="OtherLinks">
         Popular Passages
       </div>
     </a>
   </div>  <div class="thumbindex">
-    <a href="../DailyDevotion/index.html">
+    <a href="BiblePages/DailyDevotion/index.html">
       <div class="OtherLinks tr2">
         <span class="tr2">Daily Devotion</span>
       </div>
     </a>
   </div>  <div class="thumbindex">
-    <a href="../BridgePassages/bridge-to-life.html">
+    <a href="BiblePages/BridgePassages/bridge-to-life.html">
       <div class="OtherLinks">
         <span class="tr3"></span>
         The Bridge to Life

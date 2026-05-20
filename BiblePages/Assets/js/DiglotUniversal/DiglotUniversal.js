@@ -1150,8 +1150,9 @@ class JoinerDiglotPostBIndex extends HTMLElement {
 <div id="MenuContainerMirrored">
 
   <div id="biblejournalpostsholder">
-     <a href="BiblePages/BibleJournal/binder.html">    
+   
     <div class="remainhere">
+         <a href="BiblePages/BibleJournal/binder.html">   
       <hr class="lefthrliner" />
       <span class="diglotnav">
         BIBLE JOURNALS
@@ -1161,8 +1162,9 @@ class JoinerDiglotPostBIndex extends HTMLElement {
         Bible and Life Lessons
       </span>
       <hr />
+         </a>
     </div>
-   </a>
+
 
     <div class="books hoderup" id="journalholderstatic">
       <a href="BiblePages/BibleJournal/0001.html">

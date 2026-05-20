@@ -414,7 +414,7 @@ class DiglotThumbMenu extends HTMLElement {
 
 
 
-           <a href="BiblePages/BibleJournal/binder.html">                       
+           <a href="../BibleJournal/binder.html">                       
   <div class="thumbindex">
                 <hr />
                                          <span class="diglotnav">
@@ -429,9 +429,9 @@ class DiglotThumbMenu extends HTMLElement {
   </a>
 
 
-    <div class="books thumbindex" id="journalholder1">
+    <div class="books thumbindex" id="journalholder1Desktop">
     </div>
- <div class="books thumbindex" id="journalholder">
+ <div class="books thumbindex" id="journalholderDesktop">
     </div>
 
     

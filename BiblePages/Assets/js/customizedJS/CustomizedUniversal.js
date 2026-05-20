@@ -140,7 +140,7 @@ const bibleBooksTL = {
 	Obadiah: 'Obadias',
 	Jonah: 'Jonas',
 	Micah: 'Mikas',
-	Nahum: 'Nahum',
+/*  */	Nahum: 'Nahum',
 	Habakkuk: 'Habacuc',
 	Zephaniah: 'Sofonias',
 	Haggai: 'Hagai',
@@ -445,28 +445,26 @@ function getSortedRangeString(highlightedRows) {
 // HELPER: Parse Title into components
 // ---------------------------
 function getParsedTitle() {
-	let fullTitle = getCleanCitation().trim();
+   let fullTitle = document.title.trim();
 
-	let data = {
-		engBook: '',
-		tlBook: '',
-		chapter: ''
-	};
+   let data = {
+      engBook: '',
+      tlBook: '',
+      chapter: ''
+   };
 
-	// Matches:
-	// (Mateo) Matthew 1
-	// (Exodo) Exodus 4
-	const match = fullTitle.match(/^\((.*?)\)\s*(.*?)\s+(\d+)$/);
+   const match = fullTitle.match(/^\(([^)]+)\)\s+(.+?)\s+(\d+)/);
 
-	if (match) {
-		data.tlBook = match[1].trim();
-		data.engBook = match[2].trim();
-		data.chapter = match[3].trim();
-	}
+   if (match) {
+      data.tlBook = match[1].trim();
+      data.engBook = match[2].trim();
+      data.chapter = match[3].trim();
+   }
 
-	return data;
+   return data;
 }
-// ---------------------------
+
+
 // CORE FUNCTIONS: Highlight & Clear
 // ---------------------------
 function clearHighlights() {
@@ -543,113 +541,102 @@ function applyVerseHighlight() {
 // ---------------------------
 // COPY FUNCTIONS
 // ---------------------------
+// ---------------------------
+// FIXED TITLE PARSER
+// ---------------------------
+
+// ---------------------------
+// UPDATED COPY FUNCTIONS
+// ---------------------------
 async function performCopy(text, label) {
-	try {
-		await navigator.clipboard.writeText(text);
-		alert(label + ' COPIED!');
-	} catch (err) {
-		console.error('Copy failed', err);
-	}
+   try {
+      await navigator.clipboard.writeText(text);
+      alert(label + ' COPIED!');
+   } catch (err) {
+      console.error('Copy failed', err);
+   }
 }
 
 function copyEnglish() {
-	const highlightedRows = Array.from(
-		document.querySelectorAll('tr.highlight-verse')
-	);
-	if (highlightedRows.length === 0) return alert('No verses highlighted!');
+   const highlightedRows = Array.from(document.querySelectorAll('tr.highlight-verse'));
+   if (highlightedRows.length === 0) return alert('No verses highlighted!');
 
-	highlightedRows.sort(
-		(a, b) =>
-		parseInt(a.id.replace('verse-', ''), 10) -
-		parseInt(b.id.replace('verse-', ''), 10)
-	);
+   highlightedRows.sort((a, b) => 
+      parseInt(a.id.replace('verse-', ''), 10) - parseInt(b.id.replace('verse-', ''), 10)
+   );
 
-	const info = getParsedTitle();
-	const sortedRanges = getSortedRangeString(highlightedRows);
-	const cleanTitle = `${info.engBook} ${info.chapter} : ${sortedRanges}`;
+   const info = getParsedTitle();
+   const sortedRanges = getSortedRangeString(highlightedRows);
+   
+   // Formats cleanly to: "Mark 1 : 1" or "Mark 1 : 1-3"
+   const cleanTitle = `${info.engBook} ${info.chapter}: ${sortedRanges}`;
 
-	let output = [cleanTitle];
-	highlightedRows.forEach(row => {
-		const verseNo = row.id.replace('verse-', '');
-		let text = row
-			.querySelector('.tdenglishbible')
-			.innerText.trim()
-			.replace(/^\d+\s*/, '');
-		output.push(`${verseNo} ${text}`);
-	});
+   let output = [cleanTitle];
+   highlightedRows.forEach(row => {
+      const verseNo = row.id.replace('verse-', '');
+      let text = row.querySelector('.tdenglishbible').innerText.trim().replace(/^\d+\s*/, '');
+      output.push(`${verseNo} ${text}`);
+   });
 
-	performCopy(output.join('\n\n'), 'ENGLISH');
+   performCopy(output.join('\n\n'), 'ENGLISH');
 }
 
 function copyTagalog() {
-	const highlightedRows = Array.from(
-		document.querySelectorAll('tr.highlight-verse')
-	);
-	if (highlightedRows.length === 0) return alert('No verses highlighted!');
+   const highlightedRows = Array.from(document.querySelectorAll('tr.highlight-verse'));
+   if (highlightedRows.length === 0) return alert('No verses highlighted!');
 
-	highlightedRows.sort(
-		(a, b) =>
-		parseInt(a.id.replace('verse-', ''), 10) -
-		parseInt(b.id.replace('verse-', ''), 10)
-	);
+   highlightedRows.sort((a, b) => 
+      parseInt(a.id.replace('verse-', ''), 10) - parseInt(b.id.replace('verse-', ''), 10)
+   );
 
-	const info = getParsedTitle();
-	const sortedRanges = getSortedRangeString(highlightedRows);
-	const cleanTitle = `${info.tlBook} ${info.chapter} : ${sortedRanges}`;
+   const info = getParsedTitle();
+   const sortedRanges = getSortedRangeString(highlightedRows);
+   
+   // Formats cleanly to: "Marcos 1 : 1"
+   const cleanTitle = `${info.tlBook} ${info.chapter} : ${sortedRanges}`;
 
-	let output = [cleanTitle];
-	highlightedRows.forEach(row => {
-		const verseNo = row.id.replace('verse-', '');
-		let text = row
-			.querySelector('.tdtagalogbible')
-			.innerText.trim()
-			.replace(/^\d+\s*/, '');
-		output.push(`${verseNo} ${text}`);
-	});
+   let output = [cleanTitle];
+   highlightedRows.forEach(row => {
+      const verseNo = row.id.replace('verse-', '');
+      let text = row.querySelector('.tdtagalogbible').innerText.trim().replace(/^\d+\s*/, '');
+      output.push(`${verseNo} ${text}`);
+   });
 
-	performCopy(output.join('\n\n'), 'TAGALOG');
+   performCopy(output.join('\n\n'), 'TAGALOG');
 }
 
 function copyBoth() {
-	const highlightedRows = Array.from(
-		document.querySelectorAll('tr.highlight-verse')
-	);
-	if (highlightedRows.length === 0) return alert('No verses highlighted!');
+   const highlightedRows = Array.from(document.querySelectorAll('tr.highlight-verse'));
+   if (highlightedRows.length === 0) return alert('No verses highlighted!');
 
-	highlightedRows.sort(
-		(a, b) =>
-		parseInt(a.id.replace('verse-', ''), 10) -
-		parseInt(b.id.replace('verse-', ''), 10)
-	);
+   highlightedRows.sort((a, b) => 
+      parseInt(a.id.replace('verse-', ''), 10) - parseInt(b.id.replace('verse-', ''), 10)
+   );
 
-	const info = getParsedTitle();
-	const sortedRanges = getSortedRangeString(highlightedRows);
+   const info = getParsedTitle();
+   const sortedRanges = getSortedRangeString(highlightedRows);
 
-	let tagalogLines = [`${info.tlBook} ${info.chapter} : ${sortedRanges}`];
-	let englishLines = [`${info.engBook} ${info.chapter} : ${sortedRanges}`];
+   let tagalogLines = [`${info.tlBook} ${info.chapter} : ${sortedRanges}`];
+   let englishLines = [`${info.engBook} ${info.chapter} : ${sortedRanges}`];
 
-	highlightedRows.forEach(row => {
-		const verseNo = row.id.replace('verse-', '');
-		let engText = row
-			.querySelector('.tdenglishbible')
-			.innerText.trim()
-			.replace(/^\d+\s*/, '');
-		let tlText = row
-			.querySelector('.tdtagalogbible')
-			.innerText.trim()
-			.replace(/^\d+\s*/, '');
-		englishLines.push(`${verseNo} ${engText}`);
-		tagalogLines.push(`${verseNo} ${tlText}`);
-	});
+   highlightedRows.forEach(row => {
+      const verseNo = row.id.replace('verse-', '');
+      let engText = row.querySelector('.tdenglishbible').innerText.trim().replace(/^\d+\s*/, '');
+      let tlText = row.querySelector('.tdtagalogbible').innerText.trim().replace(/^\d+\s*/, '');
+      
+      englishLines.push(`${verseNo} ${engText}`);
+      tagalogLines.push(`${verseNo} ${tlText}`);
+   });
 
-	const finalOutput = [
-		tagalogLines.join('\n'),
-		'',
-		englishLines.join('\n'),
-	].join('\n');
-	performCopy(finalOutput, 'TAGALOG & ENGLISH');
+   // Uses your \n\n structure to keep paragraphs clean
+   const finalOutput = [
+      tagalogLines.join('\n\n'),
+      '',
+      englishLines.join('\n\n'),
+   ].join('\n');
+   
+   performCopy(finalOutput, 'TAGALOG & ENGLISH');
 }
-
 // ---------------------------
 // LISTENERS & INITIALIZE
 // ---------------------------

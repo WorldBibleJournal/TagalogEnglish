@@ -27,32 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Journal 01/No One is Good Save One.md",
+                "file": "Journal 02/01 JOEL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "No One is Good Save One"
+              "title": "01 JOEL"
             }
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "aa42165c6e90d740",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "decb19f1856e6a61",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -211,9 +195,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "decb19f1856e6a61",
+  "active": "597feedd295bd4bb",
   "lastOpenFiles": [
+    "Journal 02/Jesus is The True Vineyard.md",
+    "Journal 02/01 JOEL.md",
     "Journal 01/No One is Good Save One.md",
+    "Journal 02",
     "Journal 01",
     "Welcome.md"
   ]

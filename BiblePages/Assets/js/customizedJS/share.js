@@ -76,15 +76,37 @@ function renderShareButtons() {
   const staticText = `Read ${bookData.engBook} ${bookData.chapter}`;
   const staticTwitterText = encodeForTwitter(staticText);
   const staticBtn = `
+<div id="sharestaticholder">
+
+<div class="facebookstatic">
     <a href="https://www.facebook.com/sharer/sharer.php?u=${staticUrl}" 
        onclick="window.open(this.href, 'fbshare', 'width=600,height=400'); return false;"
        style="color: blue; text-decoration: underline;">
-       Share (${bookData.tlBook}) ${bookData.engBook} ${bookData.chapter} on Facebook
+
+         <div class="iconholder"><img class="svgmedia" src="../Assets/images/facebookogimage/myfacebookshare.svg"></div>
+
+      <div class="socialmessage">
+          Link so your friends may read:<br/>
+     (${bookData.tlBook}) ${bookData.engBook} ${bookData.chapter}
+      </div>
+
     </a>
+</div>
 
-    <a href="https://twitter.com/intent/tweet?text=${staticTwitterText}&hashtags=BibleReadingOnline,%20BibleVerse&via=angpagibigngdios&url=${staticUrl}"  onclick="window.open(this.href, 'twshare', 'width=600,height=400'); return false;">Share (${bookData.tlBook}) ${bookData.engBook} ${bookData.chapter} on X (Twitter)</a>
+<div class="twitterstatic">
+    <a href="https://twitter.com/intent/tweet?text=${staticTwitterText}&hashtags=BibleReadingOnline,%20BibleVerse&via=angpagibigngdios&url=${staticUrl}"  onclick="window.open(this.href, 'twshare', 'width=600,height=400'); return false;">
+    
+           <div class="iconholder"><img class="svgmedia" src="../Assets/images/facebookogimage/mytwittershare.svg"></div>
 
+      <div class="socialmessage">
+    Link so your friends may read:<br/>
+    (${bookData.tlBook}) ${bookData.engBook} ${bookData.chapter}
+          </div>
+    
+    </a>
+</div>
 
+</div>
 
   `;
 
@@ -95,17 +117,57 @@ if (item) {
 const dynamicText = `Read ${item.engBook} ${item.verse}`;
 const dynamicTwitterText = encodeForTwitter(dynamicText);
 
-dynamicBtn = `
+  dynamicBtn = `
+
+  <div id="sharedynamicholder">
+
+<div class="facebookstatic">
+
+
   <a href="https://www.facebook.com/sharer/sharer.php?u=${dynamicUrl}" 
      onclick="window.open(this.href, 'fbshare', 'width=600,height=400'); return false;"
      style="color: blue; text-decoration: underline;">
-     Share (${item.tlBook}) ${item.engBook} ${item.verse} on Facebook
+
+          <div class="iconholder"><img class="svgmedia" src="../Assets/images/facebookogimage/myfacebookshare.svg"></div>
+
+
+       </div>
+      <div class="socialmessage">
+          Link so your friends may read:<br/>
+   (${item.tlBook}) ${item.engBook} ${item.verse} 
+
+     </div>
+
   </a>
+
+</div>
+
+<div class="twitterstatic">
 
   <a href="https://twitter.com/intent/tweet?text=${dynamicTwitterText}&hashtags=BibleReadingOnline,BibleVerse&via=angpagibigngdios&url=${dynamicUrl}" 
      onclick="window.open(this.href, 'twshare', 'width=600,height=400'); return false;">
-     Share (${item.tlBook}) ${item.engBook} ${item.verse} on X (Twitter)
-  </a>
+     
+     
+     
+  
+     <div class="iconholder"><img class="svgmedia" src="../Assets/images/facebookogimage/mytwittershare.svg"></div>
+
+       </div>
+      <div class="socialmessage">
+      Link so your friends may read:<br/>
+
+     (${item.tlBook}) ${item.engBook} ${item.verse}
+
+
+
+           </div>
+    
+    </a>
+</div>
+
+</div>
+
+
 `;
 
 }
