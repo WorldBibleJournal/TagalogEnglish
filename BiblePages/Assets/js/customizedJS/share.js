@@ -129,16 +129,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-function normalizeVerses(rawInput) {
-  // Trim and split by spaces
-  const parts = rawInput.trim().split(/\s+/);
-
-  // Join with hyphens if it's a continuous range, otherwise keep commas
-  // For now, just replace spaces with "-" to make a clean hash
-  return parts.join('-');
-}
-
-
 
 function updateOgTag(property, value) {
   let metaTag = document.querySelector(`meta[property='${property}']`);
