@@ -172,7 +172,7 @@ a.clink:visited {
 
 .pinoybiblegmail {
   margin-bottom: -4px;
-          height: 1em;
+  height: 1em;
 }
 
 .homepageh1 {
@@ -186,7 +186,7 @@ a.clink:visited {
 }
 
 .tdenglishbible {
-        padding: 5px 10px 5px 5px;
+  padding: 5px 10px 5px 5px;
 }
 
 .tdtagalogbible {
@@ -204,7 +204,7 @@ a.clink:visited {
   border-color: #bbbbbb;
   padding: 5px 10px;
   overflow: auto;
-  font-size:1em;
+  font-size: 1em;
 }
 
 .OtherLinks {
@@ -265,7 +265,9 @@ a.clink:visited {
 }
 
 
-.tr5{font-size: .8em;}
+.tr5 {
+  font-size: .8em;
+}
 
 .OtherMenu {
   height: 100%;
@@ -273,7 +275,7 @@ a.clink:visited {
   overflow: hidden;
   padding: 5px;
   max-height: 250px;
-  font-size:.8em;
+  font-size: .8em;
 }
 
 .indentHolder {
@@ -304,10 +306,11 @@ a.clink:visited {
 .nextchapter {
   font-size: .9em;
 }
-.chaptertable, #journaltext
- {
-        font-size: 1em;
-    }
+
+.chaptertable,
+#journaltext {
+  font-size: 1em;
+}
 
 
 .BookIndexTitle {
@@ -447,9 +450,9 @@ a.clink:visited {
 
 
 #bgColor {
-        width: 80px;
-        height: 80px;
-        margin: 3%;
+  width: 80px;
+  height: 80px;
+  margin: 3%;
 }
 
 
@@ -480,7 +483,7 @@ a.clink:visited {
   align-items: center;
   justify-content: center;
 
-        margin-top: 0px;
+  margin-top: 0px;
 }
 
 .chapterLinks {
@@ -719,65 +722,64 @@ a.clink:visited {
   }
 }
 
-@media (max-width:1100px) {
-  .diglotcutwidth {
-    width: 85%;
-    margin: 0 auto;
-  }
-}
 
-
-    .KapituloChapter {
-        margin-top: 0;
-        margin-bottom: 2%;
-        margin-block-start: 0;
-        margin-block-end: 2%;
-        font-size: 1.2em;
-		
-		
-		
-.chaptertable, #journaltext
-
- {
-        font-size: .95em;
-    }
+.diglotcutwidth {
+  width: 85%;
+  margin: 0 auto;
 }
 
 
 
-@media (max-width:1366px) {
-  #calltoactionhanging {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    background-color: #0f0f46;
-    color: white;
-    padding: 2% 5%;
-
-    width: 55%;
-    margin-left: -100px;
-    text-align: center;
-    font-size: .9em;
-  }
-
-
-  #calltoactionhanging2 {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    background-color: #0f0f46;
-    color: white;
-    padding: 2% 5%;
-
-    width: 55%;
-    margin-left: 125%;
-    right: -100px;
-    align-self: flex-end;
-    text-align: center;
-        font-size: .9em;
-  }
+.KapituloChapter {
+  margin-top: 0;
+  margin-bottom: 2%;
+  margin-block-start: 0;
+  margin-block-end: 2%;
+  font-size: 1.2em;
 
 }
+
+.chaptertable,
+#journaltext {
+  font-size: .95em;
+}
+
+
+
+
+
+#calltoactionhanging {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f46;
+  color: white;
+  padding: 2% 5%;
+  width: 100%;
+
+  margin-left: 0px !important;
+  text-align: center;
+  font-size: .9em;
+
+}
+
+#calltoactionhanging2 {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f46;
+  color: white;
+  padding: 2% 5%;
+
+  width: 100%;
+  margin-left: 0px !important;
+  right: 0 !important;
+
+  align-self: flex-end;
+  text-align: center;
+  font-size: .9em;
+}
+
 
 
 
@@ -948,8 +950,8 @@ a.clink:visited {
   color: white;
   padding: 2% 5%;
   width: 15%;
-          height: 20px;
-        font-size: .85em;
+  height: 20px;
+  font-size: .85em;
 }
 
 
@@ -988,7 +990,8 @@ a.clink:visited {
 .fontchoiceButton:hover,
 #buttonclick:hover,
 .fontweightButton:hover,
-.colorpage2:hover, .colorpage:hover,
+.colorpage2:hover,
+.colorpage:hover,
 .smallfont:hover {
   background-color: #daff06 !important;
   color: rgb(0, 0, 0) !important;
@@ -1127,7 +1130,7 @@ a.clink:visited {
   gap: 5%;
   margin-bottom: 3%;
   cursor: pointer;
-font-size:.9em;
+  font-size: .9em;
 
 }
 
@@ -1346,17 +1349,26 @@ font-size:.9em;
 
 
 #applyImageThemeFlex {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        margin-left: 0;
-        align-items: center;
-        input{display:flex;}
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  margin-left: 0;
+  align-items: center;
+
+  input {
+    display: flex;
+  }
 }
 
-.menufocusedspacer{margin-bottom:8%;}
-.removerofmargin {margin-left:0% !important;}
+.menufocusedspacer {
+  margin-bottom: 8%;
+}
+
+.removerofmargin {
+  margin-left: 0% !important;
+}
+
 #buttonclick {
   text-align: center;
   display: flex;
@@ -1394,7 +1406,7 @@ font-size:.9em;
 #plaincoloronly {
   display: flex;
   flex-direction: column;
-justify-content: space-between;
+  justify-content: space-between;
   gap: 5%;
   flex: 1 0 10%;
   border: 2px solid rgb(10, 10, 14);
@@ -1604,7 +1616,10 @@ justify-content: space-between;
 
 }
 
-.spacerforinput {height:5%; margin-top: 2%;}
+.spacerforinput {
+  height: 5%;
+  margin-top: 2%;
+}
 
 #searchResults {
   width: 100%;
@@ -1720,7 +1735,7 @@ justify-content: space-between;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-top:2%;
+  padding-top: 2%;
 }
 
 

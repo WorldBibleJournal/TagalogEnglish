@@ -1585,6 +1585,9 @@ html {
 
 
 
+#biblemenuanimation{background: #c4eeff !important;
+background: linear-gradient(174deg, rgba(196, 238, 255, 1) 0%, rgba(140, 210, 245, 1) 51%, rgba(89, 177, 207, 1) 100%) !important;}
+
 #biblemenuanimationright,
 #biblemenuanimation {
   width: 100%;
@@ -2276,6 +2279,7 @@ border-left: 2px solid #3c5984;
   padding: 4px;
   height: 50px;
   margin-bottom: 5%;
+  border: 1px solid black;
 }
 
 
@@ -2332,6 +2336,7 @@ border-left: 2px solid #3c5984;
   height: 100%;
   z-index: 77777;
   max-width: 100vw;
+  
 }
 
 #MenuContainer {

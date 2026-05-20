@@ -575,7 +575,7 @@ class DiglotThumbMenu extends HTMLElement {
 
 
                 <div id="thumbmenuholder">
-                  <div class="bibleversesthumb" id="menuanimation">
+                  <div class="bibleversesthumb bibleversethumbindex" id="menuanimation">
                       <span id="openbiblemenu">BIBLE MENU ☰</span>
                       <span id="closebiblemenu">BIBLE MENU ✖</span>
                   </div>
