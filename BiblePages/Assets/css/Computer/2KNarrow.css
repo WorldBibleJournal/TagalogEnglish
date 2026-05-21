@@ -168,6 +168,9 @@ html {
 }
 
 
+
+
+
 .clink {
   font-size: 1.5em;
   width: 35px;
@@ -505,6 +508,7 @@ a.clink:visited {
 .BMONTjude,
 .BMONTrevelation {
   padding-left: 10px;
+    transition: background-color 0.3s ease;
 }
 
 #labelTitle {
@@ -1665,11 +1669,14 @@ a.clink:visited {
   width: 25%;
 
 }
-
+.thumbindex {font-size: 1.4em; width:100%; height:auto; text-align: center;}
 
 #MenuContainer,
 .OtherLinks {
-  max-width: 250px;
+
+        width: 100%;
+
+
 }
 
 #MenuContainer {

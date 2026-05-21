@@ -963,7 +963,7 @@ class DiglotMenuIndex extends HTMLElement {
 <!-- Facebook -->
 <!-- Facebook Share -->
 <div style="display: block !important; visibility: visible !important;">
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fangpagibigngdios.github.io%2FTagalogEnglishBibleJournal%2F"
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fworldbiblejournal.github.io%2FTagalogEnglishBibleJournal%2F"
        onclick="window.open(this.href, 'fbshare', 'width=600,height=400'); return false;"
        style="color: blue; text-decoration: underline;">
        SHARE FACEBOOK
@@ -972,7 +972,7 @@ class DiglotMenuIndex extends HTMLElement {
 
 
 <!-- Twitter / X -->
-<a href="https://x.com/intent/tweet?text=Read+Bible+Online+Bible+Journal&url=https%3A%2F%2Fangpagibigngdios.github.io%2FTagalogEnglishBibleJournal%2F&hashtags=BibleOnlineReader&via=angpagibigngdios&related=%40angpagibigngdios"
+<a href="https://x.com/intent/tweet?text=Read+Bible+Online+Bible+Journal&url=https%3A%2F%2Fworldbiblejournal.github.io%2FTagalogEnglishBibleJournal%2F&hashtags=BibleOnlineReader&via=angpagibigngdios&related=%40angpagibigngdios"
    onclick="window.open(this.href, 'twshare', 'width=600,height=400'); return false;">
    SHARE X (TWITTER)
 </a>
@@ -1284,7 +1284,7 @@ class DiglotFooter extends HTMLElement {
       <div class="footerholder">
             <div ="privacypolicy">Privacy Policy</div>
             <div ="termsservice">Terms of Service</div>
-            <div ="termsservice">ShareButton</div>
+  
             <div ="termsservice">Contact Us</div>
             <div ="termsservice">Site Map</div>
       </div>
@@ -1310,7 +1310,7 @@ class DiglotFooterIndex extends HTMLElement {
       <div class="footerholder">
             <div ="privacypolicy">Privacy Policy</div>
             <div ="termsservice">Terms of Service</div>
-            <div ="termsservice">ShareButton</div>
+      
             <div ="termsservice">Contact Us</div>
             <div ="termsservice">Site Map</div>
       </div>

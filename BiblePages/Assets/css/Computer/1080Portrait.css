@@ -1455,11 +1455,7 @@ a.clink:visited {
   height: auto;
 }
 
-#searchBox {
-  border: 1px solid gray;
-  font-size: 1.2em;
-  height: 35px;
-}
+
 
 #searchResults {
   width: 100;

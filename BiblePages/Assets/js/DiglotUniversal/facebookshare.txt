@@ -33,4 +33,4 @@ data-layout="button_count">
 
 
 
-https://x.com/intent/tweet?text=Bible+Verse+%3A+Leviticus+5+%3A+5+-+9&url=https%3A%2F%2Fangpagibigngdios.github.io%2FSpanishTagalogEnglishBibleJournal%2FBiblePages%2FOldTestament%2F03-leviticus-chapter-5.html%23verse-5-9&hashtags=%23BibleVerse&via=pagibigngdios&related=%40pagibigngdios
+https://x.com/intent/tweet?text=Bible+Verse+%3A+Leviticus+5+%3A+5+-+9&url=https%3A%2F%2Fworldbiblejournal.github.io%2FSpanishTagalogEnglishBibleJournal%2FBiblePages%2FOldTestament%2F03-leviticus-chapter-5.html%23verse-5-9&hashtags=%23BibleVerse&via=pagibigngdios&related=%40pagibigngdios

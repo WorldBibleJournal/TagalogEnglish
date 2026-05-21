@@ -1306,69 +1306,69 @@ class DiglotThumbMenu extends HTMLElement {
           }
         }
 
+function toggleDiv(div) {
+  if (div.style.display === "none" || div.style.display === "") {
+    div.style.display = "block";   // show
+  } else {
+    div.style.display = "none";    // hide
+  }
+}
 
-        function showChapters(bookNum, book, chaptersDiv, versesDiv) {
-          chaptersDiv.innerHTML = "";
+function showChapters(bookNum, book, chaptersDiv, versesDiv) {
+  // If already visible, toggle off
+  if (chaptersDiv.style.display === "block") {
+    chaptersDiv.style.display = "none";
+    versesDiv.style.display = "none"; // also hide verses when closing chapters
+    return;
+  }
 
-          // Add a single "Chapter" heading
-          const chapterHeading = document.createElement("div");
-          chapterHeading.className = "chapter-heading";
-          chapterHeading.textContent = `${book.bkl} Chapters`;
-          chaptersDiv.appendChild(chapterHeading);
+  chaptersDiv.innerHTML = "";
 
-          for (const [chapter, verseCount] of Object.entries(book.chapters)) {
-              const chapterLink = document.createElement("a");
+  const chapterHeading = document.createElement("div");
+  chapterHeading.className = "chapter-heading";
+  chapterHeading.textContent = `${book.bkl} Chapters`;
+  chaptersDiv.appendChild(chapterHeading);
 
-              // Build the actual file path
-              chapterLink.href = `../${book.tesl}/${bookNum}-${book.bkl}-chapter-${chapter}.html`;
+  for (const [chapter, verseCount] of Object.entries(book.chapters)) {
+    const chapterLink = document.createElement("a");
+    chapterLink.href = `../${book.tesl}/${bookNum}-${book.bkl}-chapter-${chapter}.html`;
+    chapterLink.innerHTML = `<span class="chapter-number">${chapter}</span>`;
 
-              // Inner HTML is just the number, wrapped in a span for styling
-              chapterLink.innerHTML = `<span class="chapter-number">${chapter}</span>`;
+    chapterLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      showVerses(bookNum, chapter, verseCount, versesDiv, book);
+      versesDiv.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
 
-              chapterLink.addEventListener("click", (e) => {
-                e.preventDefault();
-                showVerses(bookNum, chapter, verseCount, versesDiv, book);
+    chaptersDiv.appendChild(chapterLink);
+  }
 
-                // 👇 Scroll versesDiv into view after rendering - OKAY COPILOT, GOT IT, THANK YOU THANK YOU.
-                versesDiv.scrollIntoView({
-                    behavior: "smooth",
-                    block: "center"
-                });
-              });
+  chaptersDiv.style.display = "block"; // show when populated
+}
 
-              chaptersDiv.appendChild(chapterLink);
-          }
-        }
+function showVerses(bookNum, chapter, verseCount, versesDiv, book) {
+  // Toggle verses div itself
+  if (versesDiv.style.display === "block") {
+    versesDiv.style.display = "none";
+    return;
+  }
 
+  versesDiv.innerHTML = "";
 
-        function showVerses(bookNum, chapter, verseCount, versesDiv, book) {
-          versesDiv.innerHTML = "";
+  const verseHeading = document.createElement("div");
+  verseHeading.className = "verse-heading";
+  verseHeading.textContent = `Chapter ${chapter} Verses`;
+  versesDiv.appendChild(verseHeading);
 
-          // Add a single "Verse" heading
-          const verseHeading = document.createElement("div");
-          verseHeading.className = "verse-heading";
-          verseHeading.textContent = `Chapter ${chapter} Verses`;
-          versesDiv.appendChild(verseHeading);
+  for (let v = 1; v <= verseCount; v++) {
+    const verseLink = document.createElement("a");
+    verseLink.href = `../${book.tesl}/${bookNum}-${book.bkl}-chapter-${chapter}.html#verse-${v}`;
+    verseLink.innerHTML = `<span class="verse-number">${v}</span>`;
+    versesDiv.appendChild(verseLink);
+  }
 
-          for (let v = 1; v <= verseCount; v++) {
-              const verseLink = document.createElement("a");
-
-              // Build the file path + verse anchor
-              verseLink.href = `../${book.tesl}/${bookNum}-${book.bkl}-chapter-${chapter}.html#verse-${v}`;
-
-              // Inner HTML is just the number, wrapped in a span for styling
-              verseLink.innerHTML = `<span class="verse-number">${v}</span>`;
-
-              versesDiv.appendChild(verseLink);
-          }
-
-          // 👇 Ensure versesDiv is visible even if called directly
-          versesDiv.scrollIntoView({
-              behavior: "smooth",
-              block: "center"
-          });
-        }
-
+  versesDiv.style.display = "block"; // show when populated
+}
 
         const backUp = this.querySelector('.goupthumb');
 

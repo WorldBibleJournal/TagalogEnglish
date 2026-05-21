@@ -5,10 +5,11 @@ html {
   font-family: "Arimo", Arial, FreeSans, Helvetica, sans-serif;
 }
 
+
 #sharestaticholder, #sharedynamicholder {display:flex; width:100%; flex-direction: row; justify-content: space-evenly;}
 .facebookstatic, .twitterstatic {display:flex; flex-direction: row;
 
-a{display:flex;}
+a{display:flex; align-items: center;}
 }
 .svgmedia {width:100%; height:auto; }
 .socialmediamessage {width:90%; display:flex}
@@ -71,6 +72,15 @@ a:hover {
   color: #090947;
 }
 
+    #hrdivider {
+        width: 100% !important;
+
+        margin-left: 1%;
+        margin-right: 1%;
+        display: flex;
+        align-items: center;
+        margin-top: 2%;
+    }
 .chapterLinks,
 .verseLinks {
   transition: box-shadow 0.3s ease;
@@ -110,6 +120,8 @@ a:hover {
   box-shadow: -5px 4px 16px 4px rgba(0, 0, 0, 0.5);
 }
 
+
+
 .horizontalbiggerimageindex,
 .horizontalsmallerimageindex,
 .shadow1,
@@ -118,6 +130,14 @@ a:hover {
   -webkit-filter: drop-shadow(-5px 5px 12px rgba(0, 0, 0, 0.5)) drop-shadow(-5px 5px 20px rgba(0, 0, 0, 0.5));
   filter: drop-shadow(-5px 5px 12px rgba(0, 0, 0, 0.5)) drop-shadow(-5px 5px 20px rgba(0, 0, 0, 0.5));
 }
+
+
+.svgmedia {
+  -webkit-filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.3)) drop-shadow(-5px 5px 20px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.3)) drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+
 
 .shadow3 {
   -webkit-filter: drop-shadow(-5px 5px 12px rgba(0, 0, 0, 0.2)) drop-shadow(-5px 5px 20px rgba(0, 0, 0, 0.3));

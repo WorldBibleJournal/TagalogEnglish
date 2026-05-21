@@ -6,6 +6,51 @@ html {
   background-color: #122051;
 }
 
+
+#sharestaticholder,
+#sharedynamicholder {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch1order {
+  order: 2;
+}
+
+.switch2order {
+  order: 1;
+}
+
+
+.facebookstatic,
+.twitterstatic {
+  display: flex;
+  flex-direction: row;
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.svgmedia {
+  width: 100%;
+  height: auto;
+}
+
+.socialmediamessage {
+  width: 90%;
+  display: flex
+}
+
+.iconholder {
+  width: 20%;
+}
+
+
 #biblemenuanimation,
 #biblemenuanimationright {
   z-index: 33333 !important;
@@ -107,6 +152,14 @@ a:active {
   -webkit-filter: drop-shadow(-5px 5px 12px rgba(0, 0, 0, 0.5)) drop-shadow(-5px 5px 20px rgba(0, 0, 0, 0.5));
   filter: drop-shadow(-5px 5px 12px rgba(0, 0, 0, 0.5)) drop-shadow(-5px 5px 20px rgba(0, 0, 0, 0.5));
 }
+
+
+.svgmedia {
+  -webkit-filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.3)) drop-shadow(-5px 5px 20px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.3)) drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+
 
 .shadow3 {
   -webkit-filter: drop-shadow(-5px 5px 12px rgba(0, 0, 0, 0.2)) drop-shadow(-5px 5px 20px rgba(0, 0, 0, 0.3));
@@ -1809,8 +1862,3 @@ mark {
   background-color: #3a80c1;
   border-color: #3a80c1;
 }
-
-
-
-#MenuContainer {-webkit-box-shadow: -1px 1px 21px -1px rgba(0,0,0,0.59); 
-box-shadow: -1px 1px 21px -1px rgba(0,0,0,0.59);}

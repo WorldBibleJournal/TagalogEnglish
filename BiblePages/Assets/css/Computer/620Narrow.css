@@ -1654,9 +1654,14 @@ a.clink:visited {
 }
 
 
+.thumbindex {font-size: 1.4em; width:100%; height:auto; text-align: center;}
+
 #MenuContainer,
 .OtherLinks {
-  max-width: 250px;
+
+        width: 100%;
+
+
 }
 
 #MenuContainer {
