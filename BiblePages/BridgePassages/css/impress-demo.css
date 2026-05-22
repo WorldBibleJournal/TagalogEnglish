@@ -6,7 +6,9 @@
 
     Welcome to the stylesheet impress.js demo presentation.
 
-    Please remember that it is not meant to be a part of impress.js and is
+    Please remember that it is not meant to be a part of 
+    
+    impress.js and is
     not required by impress.js.
     I expect that anyone creating a presentation for impress.js would create
     their own set of styles.
@@ -165,7 +167,7 @@ a:focus {
 
 .step {
     position: relative;
-    width: 900px;
+    width: 1000px;
     padding: 40px;
     margin: 20px auto;
 
@@ -215,8 +217,8 @@ a:focus {
 .slide {
     display: block;
 
-    width: 900px;
-    height: 1100px;
+    width: 1000px;
+    height: 1200px;
     padding: 40px 60px;
 
     background-color: white;

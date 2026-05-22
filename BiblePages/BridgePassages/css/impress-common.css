@@ -29,8 +29,10 @@ It is focused on plugin functionality, not the visual style of your presentation
     position: fixed;
     right: 1px;
     bottom: 1px;
-    opacity: 0.6;
+    opacity: 1;
     z-index: 10;
+	width:100%;
+	
 }
 .impress-enabled div#impress-toolbar > span {
     margin-right: 10px;
@@ -100,7 +102,7 @@ It is focused on plugin functionality, not the visual style of your presentation
     have it show only when you move/click/touch the mouse.
 */
 body.impress-mouse-timeout div#impress-toolbar {
-    display: none;
+    display: block;
 }
 
 /*
@@ -116,10 +118,10 @@ body.impress-mouse-timeout {
     It happens a lot in Chrome. I don't remember if I've seen it in Firefox.
 
     Sometimes the element positioned in 3D (especially when it's moved back
-    along Z axis) is not clickable, because it falls 'behind' the <body>
+    along Z axis) is not clickable, because it falls 'behind' the body
     element.
 
-    To prevent this, I decided to make <body> non clickable by setting
+    To prevent this, I decided to make body non clickable by setting
     pointer-events property to `none` value.
     Value if this property is inherited, so to make everything else clickable
     I bring it back on the #impress element.
@@ -155,3 +157,7 @@ body.impress-mouse-timeout {
 */
 
 
+button {font-size:1.5em;margin-left:20%;}
+button {padding-left:2%; padding-right:2%;width:50px;}
+
+select {display:none !important;}
