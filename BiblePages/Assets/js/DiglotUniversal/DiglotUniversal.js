@@ -969,7 +969,7 @@ class DiglotMenuIndex extends HTMLElement {
       </div>
    </a>
    <!-- Twitter / X -->
-   <a href="https://x.com/intent/tweet?text=Read+Bible+Online+Bible+Journal&url=https%3A%2F%2Fworldbiblejournal.github.io%2FTagalogEnglish%2F&hashtags=BibleOnlineReader&via=angpagibigngdios&related=%40angpagibigngdios"
+   <a href="https://x.com/intent/tweet?text=Read+Bible+Online+Bible+Journal&url=https%3A%2F%2Fworldbiblejournal.github.io%2FTagalogEnglish%2F&hashtags=BibleOnlineReader&via=WBibleJournal&related=%40WBibleJournal"
       onclick="window.open(this.href, 'twshare', 'width=600,height=400'); return false;">
       <div>
    

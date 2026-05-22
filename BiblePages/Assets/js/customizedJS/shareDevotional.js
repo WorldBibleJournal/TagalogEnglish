@@ -32,7 +32,7 @@ function renderDevotionalButton() {
       </div>
 
       <div class="twitterstatic">
-        <a href="https://twitter.com/intent/tweet?text=${twitterText}&hashtags=DailyDevotion,BibleVerse&via=pagibigngdios&url=${encodedUrl}" 
+        <a href="https://twitter.com/intent/tweet?text=${twitterText}&hashtags=DailyDevotion,BibleVerse&via=WBibleJournal&url=${encodedUrl}" 
            onclick="window.open(this.href, 'twshare', 'width=600,height=400'); return false;">
            
            <div class="iconholder switch1order">

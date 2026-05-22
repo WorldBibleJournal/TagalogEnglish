@@ -111,7 +111,7 @@ const dynamicTwitterText = encodeForTwitter(dynamicText);
 
 <div class="twitterstatic">
 
-  <a href="https://twitter.com/intent/tweet?text=${dynamicTwitterText}&hashtags=BibleReadingOnline,BibleVerse&via=pagibigngdios&url=${dynamicUrl}" 
+  <a href="https://twitter.com/intent/tweet?text=${dynamicTwitterText}&hashtags=BibleReadingOnline,BibleVerse&via=WBibleJournal&url=${dynamicUrl}" 
      onclick="window.open(this.href, 'twshare', 'width=600,height=400'); return false;">
      
      
