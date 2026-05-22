@@ -218,7 +218,8 @@ a:focus {
     display: block;
 
     width: 1000px;
-    height: 1200px;
+ height:auto;
+  max-height:1500px;
     padding: 40px 60px;
 
     background-color: white;
