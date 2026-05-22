@@ -160,7 +160,7 @@ html {
   top: 0;
 }
 
-@media (max-width:750px) {
+@media (max-width:1000px) {
   #display-title2 {
     font-size: 1em;
   }
@@ -2368,15 +2368,16 @@ a.clink:visited {
 .chapter-number,
 .verse-number {
   display: inline-block;
-  width: 37px;
-  height: 37px;
-  margin: 4px;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
   text-align: center;
   line-height: 40px;
   border: 1px solid #333;
   background-color: #f0f0f0;
   color: black;
   border-radius: 4px;
+  align-content: center;
 }
 
 

@@ -643,24 +643,24 @@ class DiglotThumbMenu extends HTMLElement {
   <div class="thumbindex">
 
     <a href="BiblePages/BridgePassages/bible-passages.html">
-      <div class="OtherLinks">
+      <div class="OtherLinks hidelandscape">
         Popular Passages
       </div>
     </a>
-  </div>  <div class="thumbindex">
+  </div>  <div class="thumbindex hidelandscape">
     <a href="BiblePages/DailyDevotion/index.html">
       <div class="OtherLinks tr2">
         <span class="tr2">Daily Devotion</span>
       </div>
     </a>
-  </div>  <div class="thumbindex">
+  </div>  <div class="thumbindex hidelandscape">
     <a href="BiblePages/BridgePassages/bridge-to-life.html">
       <div class="OtherLinks">
         <span class="tr3"></span>
         The Bridge to Life
       </div>
     </a>
-  </div>  <div class="thumbindex">
+  </div>  <div class="thumbindex hidelandscape">
     <a href="http://facebook.com/authorizedbible">
       <div class="OtherLinks">
         <span class="tr5">
@@ -668,7 +668,7 @@ class DiglotThumbMenu extends HTMLElement {
           EnglishTagalogBible.Com</span>
       </div>
     </a>
-  </div>  <div class="thumbindex">
+  </div>  <div class="thumbindex hidelandscape">
     <a href="http://philnavs.org">
       <div class="OtherLinks philnavsflex">
         <span class="tr5 philsflex" style="display:inline;">The Free Bible Online is </span><span class="tr5 philsflex" style="display:inLine;">a ministry of the </span><span style="display:inLine;" class="navigatorslink philsflex">NAVIGATORS</span>
@@ -707,13 +707,13 @@ class DiglotThumbMenu extends HTMLElement {
                 </div>
 
                 <ul id="upnimation" class="animate">
-                  <li>▲</li>
-                  <li>▲</li>
-                  <li>▲</li>
-                  <li>▲</li>
-                  <li>▲</li>
-                  <li>▲</li>
-                  <li>▲</li>
+                 <li class="nodesktop">▲</li>
+                  <li class="nodesktop">▲</li>
+                                 <li class="nodesktop">▲</li>
+                  <li class="nodesktop">▲</li>
+                                 <li class="nodesktop">▲</li>
+                  <li class="nodesktop">▲</li>
+                                 <li class="nodesktop">▲</li>
                 </ul>
 
 
@@ -1298,48 +1298,54 @@ verses: document.getElementById("bkerevelationverseResult")
 
 
 
+        async function loadBibleData() {
 
-    async function loadBibleData() {
 
+          const response = await fetch("BiblePages/Assets/js/fuse/testamentsindex.json");
+          const data = await response.json();
+          return data;
+        }
 
-  const response = await fetch("BiblePages/Assets/js/fuse/testamentsindex.json");
-  const data = await response.json();
-  return data;
-}
+        async function initBible() {
+          const bibleData = await loadBibleData();
 
-async function initBible() {
-  const bibleData = await loadBibleData();
+          const bibleBooksDynamic = {};
 
-  const bibleBooksDynamic = {};
+          for (const [bookNum, book] of Object.entries(bibleData)) {
+              const name = book.bkl; // lowercase-hyphen form
+              bibleBooksDynamic[name] = {
+                book: document.getElementById(`bke${book.bkl}`),
+                chapters: document.getElementById(`bke${book.bkl}chaptersResult`),
+                verses: document.getElementById(`bke${book.bkl}verseResult`)
+              };
 
-  for (const [bookNum, book] of Object.entries(bibleData)) {
-    const name = book.bkl; // lowercase-hyphen form
-    bibleBooksDynamic[name] = {
-      book: document.getElementById(`bke${book.bkl}`),
-      chapters: document.getElementById(`bke${book.bkl}chaptersResult`),
-      verses: document.getElementById(`bke${book.bkl}verseResult`)
-    };
+              const refs = bibleBooksDynamic[name];
+              if (refs.book) {
+                refs.book.addEventListener("click", () => {
+                    showChapters(bookNum, book, refs.chapters, refs.verses);
+                });
+              }
+          }
+        }
 
-    const refs = bibleBooksDynamic[name];
-    if (refs.book) {
-      refs.book.addEventListener("click", () => {
-        showChapters(bookNum, book, refs.chapters, refs.verses);
-      });
-    }
+function toggleDiv(div) {
+  if (div.style.display === "none" || div.style.display === "") {
+    div.style.display = "block";   // show
+  } else {
+    div.style.display = "none";    // hide
   }
 }
 
-    
-    
-    
-    
-
-
-
 function showChapters(bookNum, book, chaptersDiv, versesDiv) {
+  // If already visible, toggle off
+  if (chaptersDiv.style.display === "block") {
+    chaptersDiv.style.display = "none";
+    versesDiv.style.display = "none"; // also hide verses when closing chapters
+    return;
+  }
+
   chaptersDiv.innerHTML = "";
 
-  // Add a single "Chapter" heading
   const chapterHeading = document.createElement("div");
   chapterHeading.className = "chapter-heading";
   chapterHeading.textContent = `${book.bkl} Chapters`;
@@ -1347,37 +1353,30 @@ function showChapters(bookNum, book, chaptersDiv, versesDiv) {
 
   for (const [chapter, verseCount] of Object.entries(book.chapters)) {
     const chapterLink = document.createElement("a");
-
-    // Build the actual file path
     chapterLink.href = `BiblePages/${book.tesl}/${bookNum}-${book.bkl}-chapter-${chapter}.html`;
-
-    // Inner HTML is just the number, wrapped in a span for styling
     chapterLink.innerHTML = `<span class="chapter-number">${chapter}</span>`;
 
     chapterLink.addEventListener("click", (e) => {
       e.preventDefault();
       showVerses(bookNum, chapter, verseCount, versesDiv, book);
-
-      // 👇 Scroll versesDiv into view after rendering - OKAY COPILOT, GOT IT, THANK YOU THANK YOU.
-      versesDiv.scrollIntoView({
-        behavior: "smooth",
-        block: "center"
-      });
+      versesDiv.scrollIntoView({ behavior: "smooth", block: "center" });
     });
 
     chaptersDiv.appendChild(chapterLink);
   }
-    }
-    
 
+  chaptersDiv.style.display = "block"; // show when populated
+}
 
-
-
-    
 function showVerses(bookNum, chapter, verseCount, versesDiv, book) {
+  // Toggle verses div itself
+  if (versesDiv.style.display === "block") {
+    versesDiv.style.display = "none";
+    return;
+  }
+
   versesDiv.innerHTML = "";
 
-  // Add a single "Verse" heading
   const verseHeading = document.createElement("div");
   verseHeading.className = "verse-heading";
   verseHeading.textContent = `Chapter ${chapter} Verses`;
@@ -1385,24 +1384,15 @@ function showVerses(bookNum, chapter, verseCount, versesDiv, book) {
 
   for (let v = 1; v <= verseCount; v++) {
     const verseLink = document.createElement("a");
-
-    // Build the file path + verse anchor
     verseLink.href = `BiblePages/${book.tesl}/${bookNum}-${book.bkl}-chapter-${chapter}.html#verse-${v}`;
-
-    // Inner HTML is just the number, wrapped in a span for styling
     verseLink.innerHTML = `<span class="verse-number">${v}</span>`;
-
     versesDiv.appendChild(verseLink);
   }
 
-  // 👇 Ensure versesDiv is visible even if called directly
-  versesDiv.scrollIntoView({
-    behavior: "smooth",
-    block: "center"
-  });
+  versesDiv.style.display = "block"; // show when populated
 }
-
-
+    
+    
 
         const backUp = this.querySelector('.goupthumb');
 

@@ -958,37 +958,27 @@ class DiglotMenuIndex extends HTMLElement {
 </br>
 </div>
 
-  <div class="OtherMenu" id="more-links">
-
-<!-- Facebook -->
-<!-- Facebook Share -->
-<div style="display: block !important; visibility: visible !important;">
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fworldbiblejournal.github.io%2FTagalogEnglishBibleJournal%2F"
-       onclick="window.open(this.href, 'fbshare', 'width=600,height=400'); return false;"
-       style="color: blue; text-decoration: underline;">
-       SHARE FACEBOOK
-    </a>
-</div>
-
-
-<!-- Twitter / X -->
-<a href="https://x.com/intent/tweet?text=Read+Bible+Online+Bible+Journal&url=https%3A%2F%2Fworldbiblejournal.github.io%2FTagalogEnglishBibleJournal%2F&hashtags=BibleOnlineReader&via=angpagibigngdios&related=%40angpagibigngdios"
-   onclick="window.open(this.href, 'twshare', 'width=600,height=400'); return false;">
-   SHARE X (TWITTER)
-</a>
-
-
-  </div>
-             
+<div class="OtherMenu" id="more-links">
+   <!-- Facebook -->
+   <!-- Facebook Share -->
+   <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fworldbiblejournal.github.io%2FTagalogEnglishBibleJournal%2F"
+      onclick="window.open(this.href, 'fbshare', 'width=600,height=400'); return false;"
+      style="color: blue; text-decoration: underline;">
+      <div>
+         <div style="width:30%; margin-bottom:5%;" class="iconholder"><img class="svgmedia" src="BiblePages/Assets/images/facebookogimage/myfacebookshare.svg"></div>
+      </div>
+   </a>
+   <!-- Twitter / X -->
+   <a href="https://x.com/intent/tweet?text=Read+Bible+Online+Bible+Journal&url=https%3A%2F%2Fworldbiblejournal.github.io%2FTagalogEnglishBibleJournal%2F&hashtags=BibleOnlineReader&via=angpagibigngdios&related=%40angpagibigngdios"
+      onclick="window.open(this.href, 'twshare', 'width=600,height=400'); return false;">
+      <div>
+   
+         <div style="width:30%;" class="iconholder switch1order"><img class="svgmedia" src="BiblePages/Assets/images/facebookogimage/mytwittershare.svg"></div>
+      </div>
+   </a>
 
 
-         
-
-                      
-
-               
-
-
+   
 </div>
 
   `;

@@ -1,5 +1,39 @@
 
 
+@media (min-width:3841px) {
+body {
+  font-size: 2.8em;
+}
+
+
+#MenuContainerMirrored  {
+
+     max-width: 700px !important;
+        width: 100%;
+
+}
+
+    #MenuContainer, .OtherLinks {
+        max-width: 700px !important;
+          width: 100%;
+    }
+
+        .BibleChaptersMenu, #biblejournalpostsholder
+
+ {
+        height: 1400px !important;
+  
+    }
+    
+    .OtherMenu {
+        height: 100%;
+        max-height: 800px !important;
+    }
+
+
+}
+
+
 /* ANIMATION */
 
 #MenuContainer {

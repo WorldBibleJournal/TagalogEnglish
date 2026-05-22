@@ -5,6 +5,10 @@ html {
   font-family: "Arimo", Arial, FreeSans, Helvetica, sans-serif;
 }
 
+#biblemenuanimation {box-shadow: 16px 0px 29px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 16px 0px 29px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 16px 0px 29px -5px rgba(0,0,0,0.75);}
+
 
 #sharestaticholder, #sharedynamicholder {display:flex; width:100%; flex-direction: row; justify-content: space-evenly;}
 .facebookstatic, .twitterstatic {display:flex; flex-direction: row;
@@ -72,22 +76,15 @@ a:hover {
   color: #090947;
 }
 
-    #hrdivider {
-        width: 100% !important;
-
-        margin-left: 1%;
-        margin-right: 1%;
-        display: flex;
-        align-items: center;
-        margin-top: 2%;
-    }
 .chapterLinks,
 .verseLinks {
   transition: box-shadow 0.3s ease;
 }
 
 .chapterLinks :hover,
-.verseLinks :hover {
+.verseLinks :hover, 
+.chapter-number :hover,
+.verse-number :hover  {
   -webkit-box-shadow: -5px 4px 16px 4px rgba(0, 0, 0, 0.8);
   box-shadow: -5px 4px 16px 4px rgba(0, 0, 0, 0.5);
 }
@@ -761,9 +758,7 @@ display-title2 {
   font-size: 13px;
 }
 
-#header-content>div {
-  width: 50%;
-}
+
 
 /*HEADER*/
 /*  --------  CONTROL BUTTONS   ------------  */

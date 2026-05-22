@@ -438,24 +438,24 @@ class DiglotThumbMenu extends HTMLElement {
   <div class="thumbindex">
 
     <a href="../BridgePassages/bible-passages.html">
-      <div class="OtherLinks">
+      <div class="OtherLinks hidelandscape">
         Popular Passages
       </div>
     </a>
-  </div>  <div class="thumbindex">
+  </div>  <div class="thumbindex hidelandscape">
     <a href="../DailyDevotion/index.html">
       <div class="OtherLinks tr2">
         <span class="tr2">Daily Devotion</span>
       </div>
     </a>
-  </div>  <div class="thumbindex">
+  </div>  <div class="thumbindex hidelandscape">
     <a href="../BridgePassages/bridge-to-life.html">
       <div class="OtherLinks">
         <span class="tr3"></span>
         The Bridge to Life
       </div>
     </a>
-  </div>  <div class="thumbindex">
+  </div>  <div class="thumbindex hidelandscape">
     <a href="http://facebook.com/authorizedbible">
       <div class="OtherLinks">
         <span class="tr5">
@@ -463,7 +463,7 @@ class DiglotThumbMenu extends HTMLElement {
           EnglishTagalogBible.Com</span>
       </div>
     </a>
-  </div>  <div class="thumbindex">
+  </div>  <div class="thumbindex hidelandscape">
     <a href="http://philnavs.org">
       <div class="OtherLinks philnavsflex">
         <span class="tr5 philsflex" style="display:inline;">The Free Bible Online is </span><span class="tr5 philsflex" style="display:inLine;">a ministry of the </span><span style="display:inLine;" class="navigatorslink philsflex">NAVIGATORS</span>
@@ -677,13 +677,14 @@ class DiglotThumbMenu extends HTMLElement {
                 </div>
 
                 <ul id="upnimation" class="animate">
-                  <li>▲</li>
-                  <li>▲</li>
-                  <li>▲</li>
-                  <li>▲</li>
-                  <li>▲</li>
-                  <li>▲</li>
-                  <li>▲</li>
+                  <li class="nodesktop">▲</li>
+                  <li class="nodesktop">▲</li>
+                                 <li class="nodesktop">▲</li>
+                  <li class="nodesktop">▲</li>
+                                 <li class="nodesktop">▲</li>
+                  <li class="nodesktop">▲</li>
+                                 <li class="nodesktop">▲</li>
+         
                 </ul>
 
 
@@ -710,7 +711,7 @@ class DiglotThumbMenu extends HTMLElement {
           menuDiv.style.display = isHidden ? "block" : "none";
           // Ensure the OTHER menu is closed to prevent overlap
           othermenupage.style.display = "none";
-          highlightermenupage.style.display = "none"
+
 
           // Toggle spans
           spanOpenBibleMenu.style.display = isHidden ? "none" : "inline";
