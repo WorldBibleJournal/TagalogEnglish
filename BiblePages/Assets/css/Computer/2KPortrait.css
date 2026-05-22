@@ -2,6 +2,8 @@ body {
   font-size: 1.4em;
 }
 
+.hidedesktop{display: none !important;}
+
 html {
   background-color: rgb(59, 42, 26); 
     /* A dark brown that matches your wood image */

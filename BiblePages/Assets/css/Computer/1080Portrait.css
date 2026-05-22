@@ -10,6 +10,8 @@ body {
   /* Fixed height */
 }
 
+.hidedesktop{display: none !important;}
+
 .IndexChapterParent,
 .IndexChapterParent,
 .PageVerseParent {

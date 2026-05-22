@@ -10,6 +10,7 @@ body {
   /* Fixed height */
 }
 
+.hidedesktop{display: none !important;}
 
 
 /*  HEADER PARA DI MALITO */

@@ -438,26 +438,26 @@ class DiglotThumbMenu extends HTMLElement {
   <div class="thumbindex">
 
     <a href="../BridgePassages/bible-passages.html">
-      <div class="OtherLinks hidelandscape">
+      <div class="OtherLinks hidelandscape hidedesktop">
         Popular Passages
       </div>
     </a>
   </div>  <div class="thumbindex hidelandscape">
     <a href="../DailyDevotion/index.html">
-      <div class="OtherLinks tr2">
+      <div class="OtherLinks tr2 hidedesktop">
         <span class="tr2">Daily Devotion</span>
       </div>
     </a>
   </div>  <div class="thumbindex hidelandscape">
-    <a href="../BridgePassages/bridge-to-life.html">
-      <div class="OtherLinks">
+    <a href="../BridgePassages/bridgeMobile.html">
+      <div class="OtherLinks hidedesktop">
         <span class="tr3"></span>
         The Bridge to Life
       </div>
     </a>
   </div>  <div class="thumbindex hidelandscape">
     <a href="http://facebook.com/authorizedbible">
-      <div class="OtherLinks">
+      <div class="OtherLinks hidedesktop">
         <span class="tr5">
           Facebook Page of<br />
           EnglishTagalogBible.Com</span>
@@ -465,7 +465,7 @@ class DiglotThumbMenu extends HTMLElement {
     </a>
   </div>  <div class="thumbindex hidelandscape">
     <a href="http://philnavs.org">
-      <div class="OtherLinks philnavsflex">
+      <div class="OtherLinks philnavsflex hidedesktop">
         <span class="tr5 philsflex" style="display:inline;">The Free Bible Online is </span><span class="tr5 philsflex" style="display:inLine;">a ministry of the </span><span style="display:inLine;" class="navigatorslink philsflex">NAVIGATORS</span>
         <span class="tr8 philsflex" style="color:maroon; text-adivgn:center !important;">PhilNavs.Org</span>
       </div>
@@ -629,7 +629,7 @@ class DiglotThumbMenu extends HTMLElement {
 
 
    <a href="../BibleJournal/binder.html">                       
-  <div class="thumbindex">
+  <div class="thumbindex hidedesktop">
                 <hr />
                                          <span class="diglotnav">
         BIBLE JOURNALS
@@ -711,6 +711,7 @@ class DiglotThumbMenu extends HTMLElement {
           menuDiv.style.display = isHidden ? "block" : "none";
           // Ensure the OTHER menu is closed to prevent overlap
           othermenupage.style.display = "none";
+        
 
 
           // Toggle spans
@@ -748,6 +749,8 @@ class DiglotThumbMenu extends HTMLElement {
           othermenupage.style.display = hiderightmenu ? "block" : "none";
           // Ensure the BIBLE menu is closed
           menuDiv.style.display = "none";
+          // Ensure the VERSEHIGHLIGHT menu is closed
+  
 
           // Toggle spans
           openmenuright.style.display = hiderightmenu ? "none" : "inline";

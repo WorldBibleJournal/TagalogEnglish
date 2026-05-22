@@ -1,6 +1,8 @@
 /* COMMON STEP STYLES */
+body, html {background-color: white !important;}
+
 .step {
-    width: 800px;
+    width:800px;
     padding: 40px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing:    border-box;
@@ -11,8 +13,6 @@
     font-size: 48px;
     line-height: 1.5;
 }
-
-body, html {overflow: hidden !important;}
 
 /* fade out inactive slides */
 .step {
@@ -82,19 +82,19 @@ body, html {overflow: hidden !important;}
 }
 
 #punishment {
-    width: 600px;
+    width: 100% !important;
     text-align: center;
     line-height: 1;
     font-size: 40px;
 }
 
 #solution {
-    width: 700px;
+    width: 100% !important;
     text-align: center;
 }
 
 #sacrifice {
-    width: 800px;
+    width: 100% !important;
     font-size: 2.5em;
 }
 
@@ -132,7 +132,7 @@ body, html {overflow: hidden !important;}
 }
 
 #receive {
-    width: 800px;
+    width: 100% !important;
 }
 
 #receive p {
@@ -140,7 +140,7 @@ body, html {overflow: hidden !important;}
 }
 
 #children-of-god {
-    width: 800px;
+    width: 100% !important;
     padding-bottom: 100px;
     background-position: bottom right;
     background-repeat: no-repeat;
@@ -248,11 +248,11 @@ body, html {overflow: hidden !important;}
  */
 
 .slide {
-    margin-top: 5px;
+	margin-top: 5px;
     display: block;
-    width: 1400px;
-    height: 900px;
-    padding: 1.1em 1.1em;
+    width: 100% !important;
+    height: 500px;
+    padding: 20px 30px;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
@@ -260,13 +260,13 @@ body, html {overflow: hidden !important;}
     font-family: 'Open Sans', Arial, sans-serif;
     color: rgb(102, 102, 102);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
-    font-size: 2.5em;
-    line-height: 1.2em;
+    font-size: 30px;
+    line-height: 36px;
     letter-spacing: -1px;
-    -webkit-border-radius: 6px;
-    -khtml-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
+    -webkit-border-radius:6px;
+	-khtml-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
 }
 
 .slide p.large {
@@ -320,6 +320,7 @@ text-align:center;
 .justify {
 text-align:justify;
 }
+
 
 .ref {
 	color: rgb(0, 0, 255);

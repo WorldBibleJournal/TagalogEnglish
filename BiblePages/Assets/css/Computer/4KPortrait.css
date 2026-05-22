@@ -9,6 +9,7 @@ body {
   height: 40px;
   /* Fixed height */
 }
+.hidedesktop{display: none !important;}
 
 html {
   background-color: rgb(59, 42, 26);

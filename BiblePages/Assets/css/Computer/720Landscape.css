@@ -11,6 +11,8 @@ body {
 }
 
 
+.hidedesktop{display: none !important;}
+
 
 @media (max-width: 800px) {
   .horizontalimageindex {

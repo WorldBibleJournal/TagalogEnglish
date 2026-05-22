@@ -1,3 +1,6 @@
+
+body, html {overflow: hidden !important;}
+
 /* COMMON STEP STYLES */
 .step {
     width: 800px;
