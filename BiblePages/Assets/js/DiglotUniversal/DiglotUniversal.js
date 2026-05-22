@@ -195,7 +195,7 @@ class DiglotNote extends HTMLElement {
 <p class="ChapterN2 litf FW400 N3 MG10">God is the word, and God's words will last. And on Earth Jesus is the Word of God who feeds us Knowledge of God's Love for All of Us.</p>
 
 
-<p class="ChapterN2 litf FW400 N3 MG10">No one knows the better the God Father than the Begotten Son. Ask Jesus to make God Father known to you, and you be known.</p>
+<p class="ChapterN2 litf FW400 N3 MG10">No one knows better God Father than the Begotten Son. Ask Jesus to make God Father known to you, and you be known.</p>
 
 
 <p class="ChapterN2 lorF FW400 N3 MG50">

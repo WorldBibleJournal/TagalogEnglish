@@ -600,7 +600,12 @@ div.indent {
     scroll-behavior: auto;
   }
 }
-#shareBibleVerse{display:inline; width:100%; height:auto; position:relative; }
+#shareBibleVerse, #shareDevotional {
+  display:inline;
+  width:100%;
+  height:auto;
+  position:relative;
+}
 
 #OLDTB {
   background-color: rgba(143, 200, 221, 0.24);
