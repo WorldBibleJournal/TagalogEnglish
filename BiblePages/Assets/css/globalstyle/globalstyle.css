@@ -1473,6 +1473,8 @@ mark {
   text-align: justify;
 }
 
+.jlh {background-color: rgba(88, 178, 255, 0.3);}
+
 .nkeyboard {
   width: 50%;
   height: auto;
@@ -1707,16 +1709,25 @@ mark {
 
 
 
-.binder20{display:flex; width:20%; height:100px; background-color:#16166b; color:white; font-size:1.5em; padding:1px;
+.binder20{display:flex; width:10%; height:100px; background-image: url('../../images/journal/eternal.webp'); background-size: cover; color:black; font-size:1.5em; padding:1px;
 -webkit-filter: drop-shadow(-5px 5px 12px rgba(0, 0, 0, 0.5)) drop-shadow(-5px 5px 20px rgba(0, 0, 0, 0.5));
   filter: drop-shadow(-5px 5px 12px rgba(0, 0, 0, 0.5)) drop-shadow(-5px 5px 20px rgba(0, 0, 0, 0.5));
+  text-align: center;
+
+  align-self: center; align-content: center; text-align: center; justify-content: center; align-items: center;
+
 }
 
-.binder80{display:flex; width:80%;height:100px;border-left:1px solid rgba(220, 220, 220, 0.317); border-top:1px solid rgba(220, 220, 220, 0.317);border-bottom:1px solid rgba(220, 220, 220, 0.317);
+.binder80{display:flex; width:90%;height:100px;border-left:1px solid rgba(220, 220, 220, 0.317); border-top:1px solid rgba(220, 220, 220, 0.317);border-bottom:1px solid rgba(220, 220, 220, 0.317);
 padding:-1px; text-align:center; font-size: 1.2em; font-family: 'Cinzel', serif;
-align-content: center;
+align-content: center; justify-content: center;
 }
 
 .journaltitlebinder{text-align: center; align-self: center; display: flex;}
 
-.journalnumberbinder{display:flex;}
+.journalnumberbinder{display:flex; opacity: .5; }
+
+.devotionalflex, .flexdevotional {display:flex; flex-direction: row; justify-content: space-between; font-size:1.1em;}
+
+
+.marginer {margin-left:10%; margin-right: 10%; line-height: 1.3em;}
