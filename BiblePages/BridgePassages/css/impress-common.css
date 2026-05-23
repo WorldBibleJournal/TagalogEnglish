@@ -31,7 +31,8 @@ It is focused on plugin functionality, not the visual style of your presentation
     bottom: 1px;
     opacity: 1;
     z-index: 10;
-    width: 50%;
+    width: 100%;
+
 	
 }
 .impress-enabled div#impress-toolbar > span {

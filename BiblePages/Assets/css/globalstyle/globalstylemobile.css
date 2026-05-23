@@ -7,6 +7,9 @@ html {
 }
 
 
+.desktopmenu {display: none;}
+
+
 #sharestaticholder,
 #sharedynamicholder {
   display: flex;

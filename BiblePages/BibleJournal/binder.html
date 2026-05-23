@@ -4,14 +4,21 @@
 <meta charset="utf-8" />
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <meta content="English-Tagalog Bible gives you fast searching &amp; browsing of the KJV and Ang Bibliya." name="description" />
-<title>(Mateo) Matthew 1</title>
+<title>Bible Journal Binder</title>
 
-<meta property="og:title" content="Bible Reading Online">
-<meta property="og:description" content="Read Online Bible @WorldBibleJournal">
-<meta property="og:image" content="https://worldbiblejournal.github.io/TagalogEnglish/.jpg">
-<meta property="og:url" content="https://worldbiblejournal.github.io/TagalogEnglish/">
+<meta property="og:title" content="Bible Reading Online of (Genesis) Genesis 1">
+<meta property="og:description" content="Read Online Bible @WorldBibleJournal of (Genesis) Genesis 1">
+<meta property="og:image" content="https://worldbiblejournal.github.io/TagalogEnglish/BiblePages/Assets/images/facebookogimage/tl/OT/01.webp">
 <meta property="og:image:width" content="562">
 <meta property="og:image:height" content="295">
+<meta property="og:url" content="https://worldbiblejournal.github.io/TagalogEnglish/BiblePages/OldTestament/01-genesis-chapter-1.html">
+
+<meta name="twitter:site" content="@WBibleJournal" />
+<meta name="twitter:creator" content="@WBibleJournal" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bible Reading Online of (Genesis) Genesis 1">
+<meta name="twitter:description" content="Read Online Bible @WorldBibleJournal of (Genesis) Genesis 1">
+<meta name="twitter:image" content="https://worldbiblejournal.github.io/TagalogEnglish/BiblePages/Assets/images/twitterogimage/tl/OT/01.webp">
 
 
 <!-- H01 -->
@@ -98,12 +105,18 @@
 <script src="../Assets/js/fuse/fusemodule.js"></script>
 <script src="../Assets/js/fuse/fusefunctions.js"></script>
 
+
+
 <!-- H18 -->
 <script src="../Assets/js/customizedJS/share.js"></script>
 
 <!-- H19 -->
+
 <style>
-.b0001 {background-color: rgb(249 251 133); font-weight: bold; }
+.BMONTgenesis {
+background-color: rgb(168, 255, 248) !important;
+font-weight: bold;
+}
 #header { background-color: #122051 !important;}
 </style>
 </head>
@@ -163,73 +176,28 @@
 <br />
 </div>
 <div class="previousspacernextFlexParent">
-<div class="previouschapter">
-<a class="nav navchapter" href="binder.html" id="LinkToPrev">
-<div class="nextswitcherp"> « Previous —&nbsp; </div>
-<div class="nextswitcher1p">Bible Journal Binder</div>
-</a>
-</div>
+<div class="previouschapter">Binder HomePage.</div>
 <div class="nextchapter">
-<a class="navr" href="0002.html" title="Next Chapter" id="LinkToNext">
+<a class="navr" href="0001.html" title="Next Binder Journal Number 1" id="LinkToNext">
 
-
-
-<!-- BU21 -->
-<div class="nextswitcher1"> Bible Journal #2 &nbsp;</div>
+<div class="nextswitcher1"> Binder Journal No. 1&nbsp;</div>
 <div class="nextswitcher">— Next » </div>
 </a>
 </div>
 </div>
 <hr class="lesserhrnav" />
 </div>
-<!-- BU22 -->
 
 
-
-<!-- BU23 -->
-<div id="journalheaderholder">
-<div class="journalposttitle cinzel-Diglot">The Golden GIFT of GOD is His LOVE for us.
-</div>
-<div class="journalnumber">#1</div>
-<div class="journalcategory">Miracle</div>
-</div>
-<!-- BU24 -->
-
-
-<!-- BU25 -->
 <div id="shareBibleVerse"></div>
 <div class="FontChanger ariF">
 <div class="FontWeightChanger FW500">
 
-   
-<p class="tdenglishbible">Jesus is King.
-</p>
-<p class="tdtagalogbible">
-Jesus is Lord.
-</p>
+        
 
 
 
-<table class="nondiglotresizer nondiglotLabel CustomizedTableBG chaptertable">
-<tr class="TITLETR">
-<td class="tdenglishbible TITLETD">Genealogy of Jesus<br/>Birth of Jesus</td>
-<td class="tdtagalogbible TITLETDT">Talaangkanan ni Hesus<br/>Kapanganakan ni Hesus</td>
-</tr>
-<tr class="verse" id="verse-1">
-<td class="tdenglishbible">
-<span class="verse spanenglishbible">
-<span class="verseNo verseNoEnglishBible"> 1 </span> The book of the generation of Jesus Christ, the son of David, the son of Abraham.
-</span>
-</td>
-<td class="tdtagalogbible">
-<div class="bgseparatortagalog">
-<span class="verse spantagalogbible" lang="tl">
-<span class="verseNo verseNoTagalog"> 1 </span> Ang aklat ng lahi ni Jesucristo, na anak ni David, na anak ni Abraham.
-</span>
-</div>
-</td>
-</tr>
-</table>
+<div id="BINDERHOLDER"></div>
 
 
 
@@ -296,6 +264,54 @@ Jesus is Lord.
 
 <script src="../BibleJournal/journal.js"></script>
 <!-- BD-01 -->
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const jsonUrlBinder = "binderpostsbinder.json"; 
+  const holderAllBinder = document.getElementById("BINDERHOLDER");
+
+  function createPostHTMLBinder(post) {
+    const linkNameBinder = post.bibjl === "binder" ? "binder" : post.bibjl;
+    return `
+      <a href="${linkNameBinder}.html">
+        <div class="binderpostsflex">
+<div class="binder20">
+
+          <span class="journalnumberbinder">
+            Bible Journal - ${post.bibjn}
+          </span>
+</div>
+
+<div class="binder80">
+          <span class="journaltitlebinder">
+            ${post.bibjt}
+          </span>
+</div>
+
+        </div>
+      </a>
+    `;
+  }
+
+  fetch(jsonUrlBinder)
+    .then(response => {
+      if (!response.ok) throw new Error("File not found");
+      return response.json();
+    })
+    .then(posts => {
+      if (holderAllBinder) {
+        holderAllBinder.innerHTML = posts.map(post => createPostHTMLBinder(post)).join('');
+      }
+    })
+    .catch(err => {
+      console.error("Fetch error:", err);
+      if(holderAllBinder) holderAllBinder.innerHTML = "<p>Error loading posts. Check console.</p>";
+    });
+});
+</script>
 
 </body>
 </html>

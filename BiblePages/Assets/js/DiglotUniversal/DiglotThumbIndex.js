@@ -473,7 +473,9 @@ class DiglotThumbMenu extends HTMLElement {
   </div>  
                                                                   <div id="GodYouReign" class="NewTestamentbke"><br/>
                                 GOD YOU REIGN FOREVER MORE! <br/>ADONAI REIGN! YESHUA REIGN!<br/>
-                                <img alt="Book Image" class="horizontalimageindexNOTE nothinglasts" id="himageHoriz" src="BiblePages/Assets/images/PersonalBlog/800/LoveOfGod200.webp" /><br/><br/><br/><br/>JESUS, SAVE ALL OF US.
+                               <img alt="Book Image" class="horizontalimageindexNOTE nothinglasts" id="himageHoriz" src="BiblePages/Assets/images/PersonalBlog/800/LoveOfGod200.webp" />
+                          <img alt="Book Image" class="verticalimageindexNOTE nothinglasts shadow2" id="image1080" src="BiblePages/Assets/images/PersonalBlog/HDT/LoveOfGodHD400.webp" />
+<img alt="Book Image" class="verticalimageindexNOTE nothinglasts shadow2" id="image4k" src="BiblePages/Assets/images//PersonalBlog/4KT/LoveOfGod4K800.webp" /><br/>JESUS, SAVE ALL OF US.<br/><br/><br/><br/><br/><br/>FORGIVE OUR SINS.
                                 </div>
                               </div>
                             </div>
@@ -685,7 +687,11 @@ class DiglotThumbMenu extends HTMLElement {
     
                       <div id="GodYouReign" class="NewTestamentbke"><br/>
                           GOD YOU REIGN FOREVER MORE! <br/>ADONAI REIGN! YESHUA REIGN!<br/>
-                          <img alt="Book Image" class="horizontalimageindexNOTE nothinglasts" id="himageHoriz" src="BiblePages/Assets/images/PersonalBlog/800/LoveOfGod200.webp" /><br/><br/><br/><br/>JESUS, SAVE ALL OF US.
+                          <img alt="Book Image" class="horizontalimageindexNOTE nothinglasts" id="himageHoriz" src="BiblePages/Assets/images/PersonalBlog/800/LoveOfGod200.webp" />
+                          <img alt="Book Image" class="verticalimageindexNOTE nothinglasts shadow2" id="image1080" src="BiblePages/Assets/images/PersonalBlog/HDT/LoveOfGodHD400.webp" />
+
+<img alt="Book Image" class="verticalimageindexNOTE nothinglasts shadow2" id="image4k" src="BiblePages/Assets/images//PersonalBlog/4KT/LoveOfGod4K800.webp" />
+<br/>JESUS, SAVE ALL OF US.<br/><br/><br/><br/><br/><br/>FORGIVE OUR SINS.
                       </div>
                     </div>
 
