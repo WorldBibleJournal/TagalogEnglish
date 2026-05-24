@@ -56,9 +56,9 @@ class DiglotPostButton extends HTMLElement {
                         </a>                 
                 </div>
                 <div class="books" id="divOLDbg">
-                        <a href="../OldTestament/01-genesis.html">
+                       <a href="../BibleJournal/0002.html">
                             <div class="biblejournalposts">
-                                <span class="journalnumber">Bible Journal - 4</span>
+                                <span class="journalnumber">Bible Journal - 2</span>
                                 <br/>
                                 <span class="journaltitle">
                                 SHOCKING! God Adonai's Vineyard destroyed. And nothing left.

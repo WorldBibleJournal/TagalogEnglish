@@ -480,9 +480,9 @@ class JoinerDiglotPostA extends HTMLElement {
 
 
     <div class="books" id="journalholderstatic">
-      <a href="../BibleJournal/0003.html">
+      <a href="../BibleJournal/0002.html">
         <div class="biblejournalposts">
-          <span class="journalnumber">Bible Journal - 3</span>
+          <span class="journalnumber">Bible Journal - 2</span>
                  <span class="journaltitle">
             SHOCKING! God Adonai's Vineyard destroyed. And nothing left.
           </span>
@@ -595,9 +595,9 @@ class JoinerDiglotPostB extends HTMLElement {
 
 
     <div class="books" id="journalholderstatic">
-      <a href="../BibleJournal/0003.html">
+      <a href="../BibleJournal/0002.html">
         <div class="biblejournalposts">
-          <span class="journalnumber">Bible Journal - 3</span>
+          <span class="journalnumber">Bible Journal - 2</span>
                  <span class="journaltitle">
             SHOCKING! God Adonai's Vineyard destroyed. And nothing left.
           </span>
@@ -1059,9 +1059,9 @@ class JoinerDiglotPostAIndex extends HTMLElement {
 
 
     <div class="books" id="journalholderstatic">
-      <a href="BiblePages/BibleJournal/0003.html">
+      <a href="BiblePages/BibleJournal/0002.html">
         <div class="biblejournalposts">
-          <span class="journalnumber">Bible Journal - 3</span>
+          <span class="journalnumber">Bible Journal - 2</span>
                  <span class="journaltitle">
             SHOCKING! God Adonai's Vineyard destroyed. And nothing left.
           </span>
@@ -1177,9 +1177,9 @@ class JoinerDiglotPostBIndex extends HTMLElement {
 
 
     <div class="books" id="journalholderstatic">
-      <a href="BiblePages/BibleJournal/0003.html">
+      <a href="BiblePages/BibleJournal/0002.html">
         <div class="biblejournalposts">
-          <span class="journalnumber">Bible Journal - 3</span>
+          <span class="journalnumber">Bible Journal - 2</span>
                  <span class="journaltitle">
             SHOCKING! God Adonai's Vineyard destroyed. And nothing left.
           </span>

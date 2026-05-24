@@ -42,9 +42,9 @@ this.innerHTML = `<div id="MenuContainerMirrored">  <div id="biblejournalpostsho
       </a>
     </div>
     <div class="books" id="divOLDbg">
-      <a href="BiblePages/OldTestament/01-genesis.html">
+     <a href="BiblePages/BibleJournal/0002.html">
         <div class="biblejournalposts">
-          <span class="journalnumber">Bible Journal - 3</span>
+          <span class="journalnumber">Bible Journal - 2</span>
           <br />
           <span class="journaltitle">
             SHOCKING! God Adonai's Vineyard destroyed. And nothing left.
