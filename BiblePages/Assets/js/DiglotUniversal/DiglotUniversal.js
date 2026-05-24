@@ -1273,11 +1273,17 @@ class DiglotFooter extends HTMLElement {
 
   <div class="diglotfooterdiv" style="text-align:center;">  
       <div class="footerholder">
-            <div ="privacypolicy">Privacy Policy</div>
-            <div ="termsservice">Terms of Service</div>
+
+            <a href="../Site/ContactTermsPrivacy.html#privacypolicy" ><div class="privacypolicy">Privacy Policy</div></a>
+
+            <a href="../Site/ContactTermsPrivacy.html#termsservice"><div class="termsservice">Terms of Service</div></a>
   
-            <div ="termsservice">Contact Us</div>
-            <div ="termsservice">Site Map</div>
+            <a href="../Site/ContactTermsPrivacy.html#contactus"><div class="contactus">Contact Us</div></a>
+
+ <a href="../Site/SiteMap.html">
+            <div class="sitemap">Site Map</div>
+   </a>
+
       </div>
   </div>
 
@@ -1299,11 +1305,19 @@ class DiglotFooterIndex extends HTMLElement {
 
   <div class="diglotfooterdiv" style="text-align:center;">  
       <div class="footerholder">
-            <div ="privacypolicy">Privacy Policy</div>
-            <div ="termsservice">Terms of Service</div>
+
       
-            <div ="termsservice">Contact Us</div>
-            <div ="termsservice">Site Map</div>
+                <a href="BiblePages/Site/ContactTermsPrivacy.html#privacypolicy"><div class="privacypolicy">Privacy Policy</div></a>
+
+            <a href="BiblePages/Site/ContactTermsPrivacy.html#termsservice"><div class="termsservice">Terms of Service</div></a>
+  
+            <a href="BiblePages/Site/ContactTermsPrivacy.html#contactus"><div class="contactus">Contact Us</div></a>
+
+ <a href="BiblePages/Site/SiteMap.html">
+                       <div class="sitemap">Site Map</div>
+   </a>
+
+
       </div>
   </div>
 

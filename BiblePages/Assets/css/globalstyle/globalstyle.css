@@ -97,7 +97,7 @@ a:hover {
 .bible-container-bg,
 .OtherMenu,
 #combinedcontrols,
-.slide {
+.slide, .diglotfooterdiv {
   -khtml-border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -1423,11 +1423,14 @@ mark {
   max-height: 217px;
   min-width: 300px;
   min-height: 72px;
+
 }
 
 .jupperc {
   text-transform: uppercase;
 }
+
+
 
 .extralineheight {
   line-height: 1.2em !important;
@@ -1464,9 +1467,11 @@ mark {
 }
 
 .right {
-  width: 80% !important;
-  margin-left: 20% !important;
-  height: auto;
+text-align: right !important; 
+  display: block;
+  text-align: right;
+
+
 }
 
 .jlj {

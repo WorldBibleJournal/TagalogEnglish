@@ -415,7 +415,7 @@ class DiglotThumbMenu extends HTMLElement {
 
 
            <a href="../BibleJournal/binder.html">                       
-  <div class="thumbindex">
+  <div class="thumbindex" syle="text-align: center !important;">
                 <hr />
                                          <span class="diglotnav">
         BIBLE JOURNALS
@@ -470,14 +470,14 @@ class DiglotThumbMenu extends HTMLElement {
         <span class="tr8 philsflex" style="color:maroon; text-adivgn:center !important;">PhilNavs.Org</span>
       </div>
     </a>
-  </div>  
+  </div>     
 
                        
                                                                   <div id="GodYouReign" class="NewTestamentbke"><br/>
                                 GOD YOU REIGN FOREVER MORE! <br/>ADONAI REIGN! YESHUA REIGN!<br/>
-                                               <img alt="Book Image" class="horizontalimageindexNOTE nothinglasts" id="himageHoriz" src="../Assets/images/PersonalBlog/800/LoveOfGod200.webp" />
-                          <img alt="Book Image" class="verticalimageindexNOTE nothinglasts shadow2" id="image1080" src="../Assets/images/PersonalBlog/HDT/LoveOfGodHD400.webp" />
-<img alt="Book Image" class="verticalimageindexNOTE nothinglasts shadow2" id="image4k" src="../Assets/images//PersonalBlog/4KT/LoveOfGod4K800.webp" /><br/>JESUS, SAVE ALL OF US.<br/><br/><br/><br/><br/><br/>FORGIVE OUR SINS.
+                                               <img alt="Book Image" class="horizontalimageindexNOTE nothinglasts" id="himageHoriz" src="../Assets/images/PersonalBlog/800/LoveOfGod200.webp" style="float: none !important; margin: 0 auto;" />
+                          <img alt="Book Image" class="verticalimageindexNOTE nothinglasts shadow2" id="image1080" src="../Assets/images/PersonalBlog/HDT/LoveOfGodHD400.webp" style="float: none !important; margin: 0 auto;"/>
+<img alt="Book Image" class="verticalimageindexNOTE nothinglasts shadow2" id="image4k" src="../Assets/images//PersonalBlog/4KT/LoveOfGod4K800.webp" style="float: none !important; margin: 0 auto;"/><br/>JESUS, SAVE ALL OF US.<br/><br/><br/><br/><br/><br/>FORGIVE OUR SINS.
                                 </div>
                               </div>
                             </div>
@@ -631,7 +631,7 @@ class DiglotThumbMenu extends HTMLElement {
 
 
    <a href="../BibleJournal/binder.html">                       
-  <div class="thumbindex hidedesktop">
+  <div class="thumbindex hidedesktop"  style="text-align:center !important; ">
                 <hr />
                                          <span class="diglotnav">
         BIBLE JOURNALS
@@ -652,9 +652,9 @@ class DiglotThumbMenu extends HTMLElement {
                       <div class="controlheader marginhere"> </div>
                       <div id="GodYouReign" class="NewTestamentbke"><br/>
                           GOD YOU REIGN FOREVER MORE! <br/>ADONAI REIGN! YESHUA REIGN!<br/>
-                          <img alt="Book Image" class="horizontalimageindexNOTE nothinglasts" id="himageHoriz" src="../Assets/images/PersonalBlog/800/LoveOfGod200.webp" />
-                          <img alt="Book Image" class="verticalimageindexNOTE nothinglasts shadow2" id="image1080" src="../Assets/images/PersonalBlog/HDT/LoveOfGodHD400.webp" />
-<img alt="Book Image" class="verticalimageindexNOTE nothinglasts shadow2" id="image4k" src="../Assets/images//PersonalBlog/4KT/LoveOfGod4K800.webp" />
+                          <img alt="Book Image" class="horizontalimageindexNOTE nothinglasts" id="himageHoriz" src="../Assets/images/PersonalBlog/800/LoveOfGod200.webp" style="float: none !important; margin: 0 auto;"/>
+                          <img alt="Book Image" class="verticalimageindexNOTE nothinglasts shadow2" id="image1080" src="../Assets/images/PersonalBlog/HDT/LoveOfGodHD400.webp" style="float: none !important; margin: 0 auto;"/>
+<img alt="Book Image" class="verticalimageindexNOTE nothinglasts shadow2" id="image4k" src="../Assets/images//PersonalBlog/4KT/LoveOfGod4K800.webp" style="float: none !important; margin: 0 auto;"/>
 <br/>JESUS, SAVE ALL OF US.<br/><br/><br/><br/><br/><br/>FORGIVE OUR SINS.
                       </div>
                     </div>

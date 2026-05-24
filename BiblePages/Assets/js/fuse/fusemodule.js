@@ -181,23 +181,32 @@ function restoreSettings() {
       el.style.fontSize = size + 'em';
     });
   }
-}function highlightMatches(text, indices) {
+}
+function highlightMatches(text, indices) {
   if (!indices || !indices.length) return text;
   const sortedIndices = [...indices].sort((a, b) => a[0] - b[0]);
   let result = '';
-  let lastIndex = 0;  sortedIndices.forEach(([start, end]) => {
+  let lastIndex = 0;
+
+  sortedIndices.forEach(([start, end]) => {
     const matchText = text.slice(start, end + 1);
     const beforeChar = start === 0 ? ' ' : text[start - 1];
     const afterChar = end === text.length - 1 ? ' ' : text[end + 1];
-    if (/\W/.test(beforeChar) && /\W/.test(afterChar)) {
+
+    // Highlight only if the match is bounded by non-word characters OR edges
+    if ((/\W/.test(beforeChar) || start === 0) &&
+        (/\W/.test(afterChar) || end === text.length - 1)) {
       result += text.slice(lastIndex, start);
       result += `<mark>${matchText}</mark>`;
       lastIndex = end + 1;
     }
   });
+
   result += text.slice(lastIndex);
   return result;
-}/* -------------------------------------------------
+}
+
+/*-------------------------------------------------
 INIT
 -------------------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
