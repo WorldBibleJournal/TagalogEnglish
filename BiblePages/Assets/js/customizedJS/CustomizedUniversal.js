@@ -453,16 +453,31 @@ function getParsedTitle() {
       chapter: ''
    };
 
-   const match = fullTitle.match(/^\(([^)]+)\)\s+(.+?)\s+(\d+)/);
+   // Case 1: Old format "(Marcos) Mark 1"
+   const oldMatch = fullTitle.match(/^\(([^)]+)\)\s+(.+?)\s+(\d+)/);
+   if (oldMatch) {
+      data.tlBook = oldMatch[1].trim();   // Marcos
+      data.engBook = oldMatch[2].trim();  // Mark
+      data.chapter = oldMatch[3].trim();  // 1
+      return data;
+   }
 
-   if (match) {
-      data.tlBook = match[1].trim();
-      data.engBook = match[2].trim();
-      data.chapter = match[3].trim();
+   // Case 2: New format "Mark 1 : 1,2,3" or "Marcos 1 : 1,2,3"
+   const cleanTitle = fullTitle.split(':')[0].trim(); // "Mark 1"
+   const parts = cleanTitle.split(/\s+/);
+   if (parts.length >= 2) {
+      const book = parts.slice(0, -1).join(' ');
+      const chapter = parts.slice(-1)[0];
+      data.engBook = book;
+      data.tlBook = book;
+      data.chapter = chapter;
    }
 
    return data;
 }
+
+
+
 
 
 // CORE FUNCTIONS: Highlight & Clear
